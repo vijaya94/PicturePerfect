@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Vijaya B.
+ * @author Vijaya
  */
 public class DBConnection {
     public static Connection con(){
