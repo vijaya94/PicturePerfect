@@ -3,18 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package ui.Vendor;
+import java.sql.*;
+import model.DBConnection;
+
 
 /**
  *
  * @author nihar
  */
 public class VendorLoginJFrame extends javax.swing.JFrame {
-
+    Connection con = null;
     /**
      * Creates new form VendorLoginJFrame
      */
     public VendorLoginJFrame() {
         initComponents();
+        con = DBConnection.con();
     }
 
     /**
