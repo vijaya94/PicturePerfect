@@ -30,40 +30,132 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnCustomerLogin = new javax.swing.JButton();
-        btnVendorLogin = new javax.swing.JButton();
-        btnAdminLogin = new javax.swing.JButton();
+        jSplitPane2 = new javax.swing.JSplitPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        customerButton = new javax.swing.JButton();
+        adminButton = new javax.swing.JButton();
+        vendorButton = new javax.swing.JButton();
+        jSeparator5 = new javax.swing.JSeparator();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+<<<<<<< Updated upstream
+=======
+        jPanel3 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnCustomerLogin.setText("Customer");
-        btnCustomerLogin.addActionListener(new java.awt.event.ActionListener() {
+        jSplitPane2.setDividerLocation(250);
+
+        jPanel1.setBackground(new java.awt.Color(204, 102, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/User.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, 90));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 782, 230, 10));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 230, -1));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 230, -1));
+
+        customerButton.setBackground(new java.awt.Color(204, 102, 255));
+        customerButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        customerButton.setText("Customer");
+        customerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCustomerLoginActionPerformed(evt);
+                customerButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(customerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 170, 50));
 
-        btnVendorLogin.setText("Vendor");
-        btnVendorLogin.addActionListener(new java.awt.event.ActionListener() {
+        adminButton.setBackground(new java.awt.Color(204, 102, 255));
+        adminButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        adminButton.setText("Admininistrator");
+        adminButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVendorLoginActionPerformed(evt);
+                adminButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(adminButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 170, 50));
 
-        btnAdminLogin.setText("Admin");
-        btnAdminLogin.addActionListener(new java.awt.event.ActionListener() {
+        vendorButton.setBackground(new java.awt.Color(204, 102, 255));
+        vendorButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        vendorButton.setText("Vendor");
+        vendorButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAdminLoginActionPerformed(evt);
+                vendorButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(vendorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 170, 50));
+        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 230, -1));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("Login As");
+        jSplitPane2.setLeftComponent(jPanel1);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Logo.jpg"))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 320, 120));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
+        jLabel2.setText("jLabel1");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 120));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
+        jLabel3.setText("jLabel1");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 630, 120));
+
+        jPanel3.setBackground(new java.awt.Color(204, 102, 255));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 1320, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 22, Short.MAX_VALUE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 760, 1320, 40));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Logo.jpg"))); // NOI18N
+        jLabel4.setText("jLabel1");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 500, 390));
+
+        jSplitPane2.setRightComponent(jPanel2);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Screenshot (139).png"))); // NOI18N
         jLabel3.setText("jLabel3");
@@ -72,6 +164,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -109,25 +202,30 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                     .addComponent(btnVendorLogin)
                     .addComponent(btnAdminLogin))
                 .addContainerGap(307, Short.MAX_VALUE))
+=======
+            .addComponent(jSplitPane2)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSplitPane2)
+>>>>>>> Stashed changes
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCustomerLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomerLoginActionPerformed
-            new CustomerLoginJFrame().setVisible(true);
-            dispose();
-    }//GEN-LAST:event_btnCustomerLoginActionPerformed
+    private void customerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerButtonActionPerformed
+        // TODO add your handling code here:
 
-    private void btnVendorLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendorLoginActionPerformed
-        new VendorLoginJFrame().setVisible(true);
-            dispose();
-    }//GEN-LAST:event_btnVendorLoginActionPerformed
+    }//GEN-LAST:event_customerButtonActionPerformed
 
-    private void btnAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminLoginActionPerformed
-        new AdminLoginJFrame().setVisible(true);
-            dispose();
-    }//GEN-LAST:event_btnAdminLoginActionPerformed
+    private void adminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_adminButtonActionPerformed
+
+    private void vendorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_vendorButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,11 +264,26 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAdminLogin;
-    private javax.swing.JButton btnCustomerLogin;
-    private javax.swing.JButton btnVendorLogin;
+    private javax.swing.JButton adminButton;
+    private javax.swing.JButton customerButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSplitPane jSplitPane2;
+    private javax.swing.JButton vendorButton;
+>>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }
