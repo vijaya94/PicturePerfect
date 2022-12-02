@@ -4,9 +4,9 @@
  */
 package ui;
 
-import ui.Customer.CustomerLoginJFrame;
+
 import ui.Admin.AdminLoginJFrame;
-import ui.Vendor.VendorLoginJFrame;
+
 
 /**
  *
@@ -45,12 +45,9 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-<<<<<<< Updated upstream
-=======
         jPanel3 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
->>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,9 +79,9 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, 90));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 782, 230, 10));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 230, -1));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 230, -1));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 782, 250, 10));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 250, -1));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 250, -1));
 
         customerButton.setBackground(new java.awt.Color(204, 102, 255));
         customerButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -115,7 +112,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(vendorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 170, 50));
-        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 230, -1));
+        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 250, -1));
 
         jSplitPane2.setLeftComponent(jPanel1);
 
@@ -157,58 +154,15 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 
         jSplitPane2.setRightComponent(jPanel2);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Screenshot (139).png"))); // NOI18N
-        jLabel3.setText("jLabel3");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< Updated upstream
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2)
-                        .addGap(223, 223, 223)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(191, 191, 191)
-                        .addComponent(btnCustomerLogin)
-                        .addGap(165, 165, 165)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnVendorLogin)
-                                .addGap(188, 188, 188)
-                                .addComponent(btnAdminLogin)))))
-                .addContainerGap(131, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(49, 49, 49)
-                .addComponent(jLabel1)
-                .addGap(84, 84, 84)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCustomerLogin)
-                    .addComponent(btnVendorLogin)
-                    .addComponent(btnAdminLogin))
-                .addContainerGap(307, Short.MAX_VALUE))
-=======
             .addComponent(jSplitPane2)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSplitPane2)
->>>>>>> Stashed changes
         );
 
         pack();
@@ -269,8 +223,6 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-<<<<<<< Updated upstream
-=======
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
@@ -284,6 +236,5 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSplitPane jSplitPane2;
     private javax.swing.JButton vendorButton;
->>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }
