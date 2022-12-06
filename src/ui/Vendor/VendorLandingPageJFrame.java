@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package ui.Customer;
+package ui.Vendor;
 
 /**
  *
  * @author Avinash Reddy
  */
-public class CustomerBookEventJFrame extends javax.swing.JFrame {
+public class VendorLandingPageJFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form CustomerBookEventJFrame
+     * Creates new form VendorLandingPageJFrame
      */
-    public CustomerBookEventJFrame() {
+    public VendorLandingPageJFrame() {
         initComponents();
     }
 
@@ -26,22 +26,19 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane = new javax.swing.JSplitPane();
+        jSplitPane2 = new javax.swing.JSplitPane();
         leftJPanel = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
-        venueButton = new javax.swing.JButton();
-        musicButton = new javax.swing.JButton();
-        kidsEntertainmentButton = new javax.swing.JButton();
+        vendorViewBookingsButton = new javax.swing.JButton();
+        vendorViewDetailsButton = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
-        couplePackageButton = new javax.swing.JButton();
-        cateringButton = new javax.swing.JButton();
-        decorationButton = new javax.swing.JButton();
-        giftShopButton = new javax.swing.JButton();
-        rentalTransportationButton = new javax.swing.JButton();
+        vendorManageRequestsButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         rightJPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -54,7 +51,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jSplitPane.setDividerLocation(250);
+        jSplitPane2.setDividerLocation(250);
 
         leftJPanel.setBackground(new java.awt.Color(204, 102, 255));
         leftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -68,35 +65,25 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
         leftJPanel.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 250, -1));
 
-        venueButton.setBackground(new java.awt.Color(204, 102, 255));
-        venueButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        venueButton.setText("Venue");
-        venueButton.addActionListener(new java.awt.event.ActionListener() {
+        vendorViewBookingsButton.setBackground(new java.awt.Color(204, 102, 255));
+        vendorViewBookingsButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        vendorViewBookingsButton.setText("View Bookings");
+        vendorViewBookingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                venueButtonActionPerformed(evt);
+                vendorViewBookingsButtonActionPerformed(evt);
             }
         });
-        leftJPanel.add(venueButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 690, 170, 50));
+        leftJPanel.add(vendorViewBookingsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 640, 170, 50));
 
-        musicButton.setBackground(new java.awt.Color(204, 102, 255));
-        musicButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        musicButton.setText("Music");
-        musicButton.addActionListener(new java.awt.event.ActionListener() {
+        vendorViewDetailsButton.setBackground(new java.awt.Color(204, 102, 255));
+        vendorViewDetailsButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        vendorViewDetailsButton.setText("View Details");
+        vendorViewDetailsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                musicButtonActionPerformed(evt);
+                vendorViewDetailsButtonActionPerformed(evt);
             }
         });
-        leftJPanel.add(musicButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 170, 50));
-
-        kidsEntertainmentButton.setBackground(new java.awt.Color(204, 102, 255));
-        kidsEntertainmentButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        kidsEntertainmentButton.setText("Kids Entertainment");
-        kidsEntertainmentButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kidsEntertainmentButtonActionPerformed(evt);
-            }
-        });
-        leftJPanel.add(kidsEntertainmentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 170, 50));
+        leftJPanel.add(vendorViewDetailsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 170, 50));
 
         jSeparator5.setBackground(new java.awt.Color(153, 0, 153));
         leftJPanel.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 250, -1));
@@ -105,60 +92,43 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         leftJPanel.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 760, 250, 10));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel10.setText("Services");
-        leftJPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 70, -1));
+        jLabel10.setText("<<Vendor Name>>");
+        leftJPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 180, -1));
 
-        couplePackageButton.setBackground(new java.awt.Color(204, 102, 255));
-        couplePackageButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        couplePackageButton.setText("Couple Package");
-        couplePackageButton.addActionListener(new java.awt.event.ActionListener() {
+        vendorManageRequestsButton.setBackground(new java.awt.Color(204, 102, 255));
+        vendorManageRequestsButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        vendorManageRequestsButton.setText("Manage Requests");
+        vendorManageRequestsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                couplePackageButtonActionPerformed(evt);
+                vendorManageRequestsButtonActionPerformed(evt);
             }
         });
-        leftJPanel.add(couplePackageButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 170, 50));
+        leftJPanel.add(vendorManageRequestsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 170, 50));
 
-        cateringButton.setBackground(new java.awt.Color(204, 102, 255));
-        cateringButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        cateringButton.setText("Catering");
-        cateringButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cateringButtonActionPerformed(evt);
-            }
-        });
-        leftJPanel.add(cateringButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 170, 50));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        decorationButton.setBackground(new java.awt.Color(204, 102, 255));
-        decorationButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        decorationButton.setText("Decoration");
-        decorationButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                decorationButtonActionPerformed(evt);
-            }
-        });
-        leftJPanel.add(decorationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 170, 50));
+        jLabel4.setText("Profile Photo");
 
-        giftShopButton.setBackground(new java.awt.Color(204, 102, 255));
-        giftShopButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        giftShopButton.setText("Gift Shop");
-        giftShopButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                giftShopButtonActionPerformed(evt);
-            }
-        });
-        leftJPanel.add(giftShopButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 170, 50));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
-        rentalTransportationButton.setBackground(new java.awt.Color(204, 102, 255));
-        rentalTransportationButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        rentalTransportationButton.setText("Retal Transportation");
-        rentalTransportationButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rentalTransportationButtonActionPerformed(evt);
-            }
-        });
-        leftJPanel.add(rentalTransportationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 610, 170, 50));
+        leftJPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 210, 190));
 
-        jSplitPane.setLeftComponent(leftJPanel);
+        jSplitPane2.setLeftComponent(leftJPanel);
 
         rightJPanel.setBackground(new java.awt.Color(255, 255, 255));
         rightJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -215,56 +185,36 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(102, 0, 255));
-        jLabel12.setText("Select Any Offered Service ");
-        rightJPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 310, -1));
+        jLabel12.setText("Vendor Work Area");
+        rightJPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 210, -1));
 
-        jSplitPane.setRightComponent(rightJPanel);
+        jSplitPane2.setRightComponent(rightJPanel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane)
+            .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1577, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane)
+            .addComponent(jSplitPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 800, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void venueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_venueButtonActionPerformed
+    private void vendorViewBookingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorViewBookingsButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_venueButtonActionPerformed
+    }//GEN-LAST:event_vendorViewBookingsButtonActionPerformed
 
-    private void musicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_musicButtonActionPerformed
+    private void vendorViewDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorViewDetailsButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_musicButtonActionPerformed
+    }//GEN-LAST:event_vendorViewDetailsButtonActionPerformed
 
-    private void kidsEntertainmentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kidsEntertainmentButtonActionPerformed
+    private void vendorManageRequestsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorManageRequestsButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_kidsEntertainmentButtonActionPerformed
-
-    private void couplePackageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_couplePackageButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_couplePackageButtonActionPerformed
-
-    private void cateringButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cateringButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cateringButtonActionPerformed
-
-    private void decorationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_decorationButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_decorationButtonActionPerformed
-
-    private void giftShopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_giftShopButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_giftShopButtonActionPerformed
-
-    private void rentalTransportationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentalTransportationButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rentalTransportationButtonActionPerformed
+    }//GEN-LAST:event_vendorManageRequestsButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -283,34 +233,32 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CustomerBookEventJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendorLandingPageJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CustomerBookEventJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendorLandingPageJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CustomerBookEventJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendorLandingPageJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CustomerBookEventJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendorLandingPageJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CustomerBookEventJFrame().setVisible(true);
+                new VendorLandingPageJFrame().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton cateringButton;
-    private javax.swing.JButton couplePackageButton;
-    private javax.swing.JButton decorationButton;
-    private javax.swing.JButton giftShopButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator1;
@@ -320,12 +268,11 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JSplitPane jSplitPane;
-    private javax.swing.JButton kidsEntertainmentButton;
+    private javax.swing.JSplitPane jSplitPane2;
     private javax.swing.JPanel leftJPanel;
-    private javax.swing.JButton musicButton;
-    private javax.swing.JButton rentalTransportationButton;
     private javax.swing.JPanel rightJPanel;
-    private javax.swing.JButton venueButton;
+    private javax.swing.JButton vendorManageRequestsButton;
+    private javax.swing.JButton vendorViewBookingsButton;
+    private javax.swing.JButton vendorViewDetailsButton;
     // End of variables declaration//GEN-END:variables
 }

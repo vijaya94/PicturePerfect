@@ -6,6 +6,7 @@ package ui;
 
 
 import ui.Admin.AdminLoginJFrame;
+import ui.Customer.CustomerViewDetailsJFrame;
 
 
 /**
@@ -30,8 +31,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane2 = new javax.swing.JSplitPane();
-        jPanel1 = new javax.swing.JPanel();
+        leftJPanel = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
@@ -41,20 +41,22 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         adminButton = new javax.swing.JButton();
         vendorButton = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JSeparator();
-        jPanel2 = new javax.swing.JPanel();
+        jSeparator7 = new javax.swing.JSeparator();
+        rightJPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jSeparator6 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 102, 255));
 
-        jSplitPane2.setDividerLocation(250);
-
-        jPanel1.setBackground(new java.awt.Color(204, 102, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        leftJPanel.setBackground(new java.awt.Color(204, 102, 255));
+        leftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -78,10 +80,16 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, 90));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 782, 250, 10));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 250, -1));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 250, -1));
+        leftJPanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, 90));
+
+        jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
+        leftJPanel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 782, 250, 10));
+
+        jSeparator3.setBackground(new java.awt.Color(153, 0, 153));
+        leftJPanel.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 250, -1));
+
+        jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
+        leftJPanel.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 250, -1));
 
         customerButton.setBackground(new java.awt.Color(204, 102, 255));
         customerButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -91,7 +99,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 customerButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(customerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 170, 50));
+        leftJPanel.add(customerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 170, 50));
 
         adminButton.setBackground(new java.awt.Color(204, 102, 255));
         adminButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -101,7 +109,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 adminButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(adminButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 170, 50));
+        leftJPanel.add(adminButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 170, 50));
 
         vendorButton.setBackground(new java.awt.Color(204, 102, 255));
         vendorButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -111,27 +119,32 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 vendorButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(vendorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 170, 50));
-        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 250, -1));
+        leftJPanel.add(vendorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 170, 50));
 
-        jSplitPane2.setLeftComponent(jPanel1);
+        jSeparator5.setBackground(new java.awt.Color(153, 0, 153));
+        leftJPanel.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 250, -1));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jSeparator7.setBackground(new java.awt.Color(153, 0, 153));
+        leftJPanel.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 758, 250, 10));
+
+        rightJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        rightJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 320, 120));
+        rightJPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 320, 120));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
         jLabel2.setText("jLabel1");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 120));
+        rightJPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 120));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
         jLabel3.setText("jLabel1");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 630, 120));
+        rightJPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 630, 120));
 
         jPanel3.setBackground(new java.awt.Color(204, 102, 255));
+
+        jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -146,23 +159,44 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 760, 1320, 40));
+        rightJPanel.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1320, 40));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Logo.jpg"))); // NOI18N
         jLabel4.setText("jLabel1");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 500, 390));
+        rightJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 500, 430));
 
-        jSplitPane2.setRightComponent(jPanel2);
+        jPanel5.setBackground(new java.awt.Color(204, 102, 255));
+
+        jSeparator6.setBackground(new java.awt.Color(153, 0, 153));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator6, javax.swing.GroupLayout.DEFAULT_SIZE, 1320, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(0, 22, Short.MAX_VALUE)
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        rightJPanel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 760, 1320, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane2)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(leftJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rightJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1321, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane2)
+            .addComponent(leftJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(rightJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -170,7 +204,6 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 
     private void customerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerButtonActionPerformed
         // TODO add your handling code here:
-
     }//GEN-LAST:event_customerButtonActionPerformed
 
     private void adminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminButtonActionPerformed
@@ -225,16 +258,18 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JSplitPane jSplitPane2;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JPanel leftJPanel;
+    private javax.swing.JPanel rightJPanel;
     private javax.swing.JButton vendorButton;
     // End of variables declaration//GEN-END:variables
 }
