@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ui.Vendor;
+package ui.Admin;
 
 /**
  *
  * @author Avinash Reddy
  */
-public class VendorManageRequestsJPanel extends javax.swing.JPanel {
+public class VendorRequestJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form VendorManageRequestsJPanel
+     * Creates new form VendorRequestJPanel
      */
-    public VendorManageRequestsJPanel() {
+    public VendorRequestJPanel() {
         initComponents();
     }
 
@@ -43,7 +43,6 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
         custBookingsTable = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
         searchText = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         approveButton = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -83,8 +82,8 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
-        jLabel10.setText("Manage Customer Requests");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 330, -1));
+        jLabel10.setText("Manage Vendor Requests");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 300, -1));
 
         jPanel5.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -200,9 +199,6 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
 
-        jLabel1.setText("confirm the CRUD operations here, based on the crud operations add the buttons and panels");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 720, 510, -1));
-
         approveButton.setText("Approve");
         approveButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         approveButton.addActionListener(new java.awt.event.ActionListener() {
@@ -247,7 +243,6 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton approveButton;
     private javax.swing.JButton backButton;
     private javax.swing.JTable custBookingsTable;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

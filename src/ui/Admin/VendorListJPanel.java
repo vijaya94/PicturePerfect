@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ui.Vendor;
+package ui.Admin;
 
 /**
  *
  * @author Avinash Reddy
  */
-public class VendorManageRequestsJPanel extends javax.swing.JPanel {
+public class VendorListJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form VendorManageRequestsJPanel
+     * Creates new form VendorListJPanel
      */
-    public VendorManageRequestsJPanel() {
+    public VendorListJPanel() {
         initComponents();
     }
 
@@ -35,7 +35,7 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
-        rejectButton = new javax.swing.JButton();
+        deleteButton = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -44,7 +44,7 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         searchText = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        approveButton = new javax.swing.JButton();
+        viewButton1 = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -83,8 +83,8 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
-        jLabel10.setText("Manage Customer Requests");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 330, -1));
+        jLabel10.setText("Vendors List");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 150, -1));
 
         jPanel5.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -106,9 +106,9 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 770, 1580, 30));
 
-        rejectButton.setText("Reject");
-        rejectButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        jPanel1.add(rejectButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 710, 117, 39));
+        deleteButton.setText("Delete");
+        deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        jPanel1.add(deleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 710, 117, 39));
 
         backButton.setText("Back");
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -117,7 +117,7 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 710, 117, 39));
+        jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 710, 117, 39));
 
         jPanel2.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -193,24 +193,24 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(32, 32, 32)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
 
         jLabel1.setText("confirm the CRUD operations here, based on the crud operations add the buttons and panels");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 720, 510, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 710, 510, -1));
 
-        approveButton.setText("Approve");
-        approveButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        approveButton.addActionListener(new java.awt.event.ActionListener() {
+        viewButton1.setText("View");
+        viewButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        viewButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                approveButtonActionPerformed(evt);
+                viewButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(approveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 710, 117, 39));
+        jPanel1.add(viewButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 710, 117, 39));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -238,15 +238,15 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_backButtonActionPerformed
 
-    private void approveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_approveButtonActionPerformed
+    private void viewButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_approveButtonActionPerformed
+    }//GEN-LAST:event_viewButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton approveButton;
     private javax.swing.JButton backButton;
     private javax.swing.JTable custBookingsTable;
+    private javax.swing.JButton deleteButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -261,7 +261,7 @@ public class VendorManageRequestsJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JButton rejectButton;
     private javax.swing.JTextField searchText;
+    private javax.swing.JButton viewButton1;
     // End of variables declaration//GEN-END:variables
 }
