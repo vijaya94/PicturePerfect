@@ -103,7 +103,7 @@ public class CateringJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 770, 1580, 30));
 
-        updateButton.setText("Sample Button");
+        updateButton.setText("Send Request");
         updateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 710, 119, 39));
 
