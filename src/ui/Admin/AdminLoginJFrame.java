@@ -148,7 +148,6 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
 
         adminUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
-        adminPasswordText.setText("jPasswordField1");
         adminPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
