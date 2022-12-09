@@ -153,7 +153,6 @@ public class CustomerLoginJFrame extends javax.swing.JFrame {
 
         custUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
-        custPasswordText.setText("jPasswordField1");
         custPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
