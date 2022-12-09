@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import model.DBConnection;
+import ui.Customer.CustomerLandingPageJFrame;
 
 /**
  *
@@ -52,7 +53,8 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtVendorUsername = new javax.swing.JTextField();
-        txtVendorPassword = new javax.swing.JTextField();
+        txtVendorPassword = new javax.swing.JPasswordField();
+        homeButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -118,7 +120,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 3, 10)); // NOI18N
         jLabel8.setText("New User?");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 730, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 730, -1, -1));
 
         registerButton.setText("Register");
         registerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -127,7 +129,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 registerButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 710, 119, 39));
+        jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 710, 119, 39));
 
         loginButton.setText("Login");
         loginButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -136,7 +138,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 loginButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 710, 117, 39));
+        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 710, 117, 39));
 
         refreshButton.setText("Refresh");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -145,7 +147,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 refreshButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 710, 117, 39));
+        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 710, 117, 39));
 
         jPanel4.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -161,6 +163,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
         txtVendorUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
+        txtVendorPassword.setText("jPasswordField1");
         txtVendorPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -173,10 +176,10 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(100, 100, 100)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(txtVendorPassword, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
-                    .addComponent(txtVendorUsername))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtVendorUsername)
+                    .addComponent(txtVendorPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,7 +192,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(txtVendorPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -197,7 +200,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(477, Short.MAX_VALUE)
+                .addContainerGap(423, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(467, 467, 467))
         );
@@ -216,17 +219,21 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(64, 64, 64)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 480));
+
+        homeButton.setText("Home");
+        homeButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        jPanel1.add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 170, 70, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -256,12 +263,8 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
 
-    private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
-        new VendorRegistrationJFrame().setVisible(true);
-            dispose();
-    }//GEN-LAST:event_registerButtonActionPerformed
-
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+        // TODO add your handling code here:
         String username = txtVendorUsername.getText();
            String password = txtVendorPassword.getText();
            
@@ -290,15 +293,25 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                     
                     ResultSet rs1 = st1.executeQuery();
                     
+                    PreparedStatement st2 = connection.prepareStatement("Select username, password from vendor_details where username=? and password=? and registration_status = ?");
+
+                    st2.setString(1, username);
+                    st2.setString(2, password);
+                    st2.setInt(3,2);
                     
-                    if (rs1.next()) {
+                    ResultSet rs2 = st2.executeQuery();
+                    
+                    if (rs2.next()) {
+                        JOptionPane.showMessageDialog(this, "Your request has been rejected");
+                        
+                    } 
+                   else if (rs1.next()) {
                         JOptionPane.showMessageDialog(this, "Please wait for admin to approve your registration");
                         
                     } 
                     else if(rs.next()){
-                        dispose();
-                        VendorLandingPageJFrame landing = new VendorLandingPageJFrame(username);
-                        landing.setVisible(true);
+                    new VendorLandingPageJFrame().setVisible(true);
+            dispose();
                         JOptionPane.showMessageDialog(this, "You have successfully logged in");
                     }
                     else {
@@ -307,7 +320,16 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 } catch (SQLException sqlException) {
                     sqlException.printStackTrace();
                 }  
+        
+        
+       
     }//GEN-LAST:event_loginButtonActionPerformed
+
+    private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
+        // TODO add your handling code here:
+        new VendorRegistrationJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_registerButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -345,6 +367,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -363,7 +386,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
     private javax.swing.JButton loginButton;
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton registerButton;
-    private javax.swing.JTextField txtVendorPassword;
+    private javax.swing.JPasswordField txtVendorPassword;
     private javax.swing.JTextField txtVendorUsername;
     // End of variables declaration//GEN-END:variables
 }

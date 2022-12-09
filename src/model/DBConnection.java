@@ -15,9 +15,8 @@ public class DBConnection {
     public static Connection con(){
         Connection con = null;
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+          //  Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pictureperfect","root","");
-             
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
         }
