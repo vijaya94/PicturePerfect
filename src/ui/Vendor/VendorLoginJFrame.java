@@ -335,7 +335,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                         
                     } 
                     else if(rs.next()){
-                    new VendorLandingPageJFrame().setVisible(true);
+                    new VendorLandingPageJFrame(username).setVisible(true);
             dispose();
                         JOptionPane.showMessageDialog(this, "You have successfully logged in");
                     }

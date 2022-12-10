@@ -16,9 +16,15 @@ public class VendorLandingPageJFrame extends javax.swing.JFrame {
     /**
      * Creates new form VendorLandingPageJFrame
      */
+    String username;
+    public VendorLandingPageJFrame(String username) {
+        this.username = username;
+        initComponents();
+    }
     public VendorLandingPageJFrame() {
         initComponents();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -351,7 +357,7 @@ public class VendorLandingPageJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
        //new VendorViewDetailsJPanel().setVisible(true);
             //dispose();
-        VendorViewDetailsJPanel vvd = new VendorViewDetailsJPanel(rightPanel);
+        VendorViewDetailsJPanel vvd = new VendorViewDetailsJPanel(username);
         rightPanel.add("CateringJPanel",vvd);
         CardLayout layout = (CardLayout)rightPanel.getLayout();
         layout.next(rightPanel);
