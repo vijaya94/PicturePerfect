@@ -66,11 +66,6 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="690" pref="690" max="-2" attributes="0"/>
-                  <Component id="jLabel10" min="-2" pref="170" max="-2" attributes="0"/>
-                  <EmptySpace min="129" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="jLabel2" min="-2" pref="490" max="-2" attributes="0"/>
@@ -80,9 +75,8 @@
                           <Component id="jLabel4" min="-2" pref="590" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <EmptySpace min="990" pref="990" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="990" max="-2" attributes="0"/>
                           <Component id="bookEventButton" min="-2" pref="117" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                           <Component id="viewDetailsButton" min="-2" pref="117" max="-2" attributes="0"/>
@@ -90,6 +84,15 @@
                           <Component id="viewBookingsButton" min="-2" pref="117" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel10" min="-2" pref="170" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="522" max="-2" attributes="0"/>
+                              <Component id="logoutBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
@@ -104,8 +107,11 @@
                       <Component id="jLabel4" min="-2" pref="120" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <Component id="logoutBtn" min="-2" pref="35" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
@@ -352,9 +358,8 @@
                     <Component class="javax.swing.JComboBox" name="cmbEventType">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="2">
-                            <StringItem index="0" value="--Select--"/>
-                            <StringItem index="1" value="Birthday"/>
+                          <StringArray count="1">
+                            <StringItem index="0" value="Birthday"/>
                           </StringArray>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -440,6 +445,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewBookingsButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="logoutBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Logout"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logoutBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

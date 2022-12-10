@@ -82,9 +82,7 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        logoutButton = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        backButton = new javax.swing.JButton();
         btnApproveVendor = new javax.swing.JButton();
         rejectButton = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -105,9 +103,6 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Manage Vendors Requests");
 
-        logoutButton.setText("Logout");
-        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -115,29 +110,17 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(545, 545, 545)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 248, Short.MAX_VALUE)
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(157, 157, 157))
+                .addContainerGap(473, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addComponent(jLabel10)
                 .addContainerGap())
         );
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-
-        backButton.setText("Back");
-        backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        backButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
-            }
-        });
 
         btnApproveVendor.setText("Approve");
         btnApproveVendor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -160,9 +143,7 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(647, Short.MAX_VALUE)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97)
+                .addContainerGap(861, Short.MAX_VALUE)
                 .addComponent(btnApproveVendor, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(90, 90, 90)
                 .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -173,7 +154,6 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnApproveVendor, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(15, Short.MAX_VALUE))
@@ -285,10 +265,6 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backButtonActionPerformed
-
     private void btnApproveVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveVendorActionPerformed
         int rowSelected = tblAdminVendorRequests.getSelectedRow();
         if(rowSelected < 0){
@@ -374,7 +350,6 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backButton;
     private javax.swing.JButton btnApproveVendor;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
@@ -385,7 +360,6 @@ public class VendorRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton logoutButton;
     private javax.swing.JButton rejectButton;
     private javax.swing.JTable tblAdminVendorRequests;
     // End of variables declaration//GEN-END:variables

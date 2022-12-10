@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import model.DBConnection;
 import ui.Customer.CustomerRegisterJFrame;
+import ui.HomeScreenJFrame;
 
 /**
  *
@@ -148,7 +149,6 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
 
         adminUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
-        adminPasswordText.setText("jPasswordField1");
         adminPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -218,6 +218,11 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
 
         homeButton.setText("Home");
         homeButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeButtonActionPerformed(evt);
+            }
+        });
         jPanel1.add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 170, 60, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -246,6 +251,8 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
 
     private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
         // TODO add your handling code here:
+        adminUsernameText.setText(null);
+        adminPasswordText.setText(null);
     }//GEN-LAST:event_refreshButtonActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
@@ -269,9 +276,10 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
                     st.setString(2, password);
                     ResultSet rs = st.executeQuery();
                     if (rs.next()) {
-                         new AdminLandingPageJFrame().setVisible(true);
-                         dispose();
                         JOptionPane.showMessageDialog(this, "You have successfully logged in");
+                         new AdminLandingPageJFrame(username).setVisible(true);
+                         dispose();
+                        
                     } else {
                         JOptionPane.showMessageDialog(this, "Wrong Username & Password");
                     }
@@ -280,6 +288,12 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
                 } 
        
     }//GEN-LAST:event_loginButtonActionPerformed
+
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
+        // TODO add your handling code here:
+        new HomeScreenJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_homeButtonActionPerformed
 
     /**
      * @param args the command line arguments

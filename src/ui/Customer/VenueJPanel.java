@@ -4,6 +4,8 @@
  */
 package ui.Customer;
 
+import controller.BookingEventController;
+import controller.VendorController;
 import java.awt.CardLayout;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,7 +16,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
+import model.BookingEventDetails;
 import model.DBConnection;
+import model.VVendorBookingDetails;
+import model.VendorDetails;
 import ui.HomeScreenJFrame;
 
 /**
@@ -30,48 +35,49 @@ public class VenueJPanel extends javax.swing.JPanel {
     String username;
     int bookingId;
     Date bookingDate;
+
     public VenueJPanel() {
-       
+
         initComponents();
     }
-    
-        public VenueJPanel(JPanel rightJPanel, String username, int bookingId, Date bookingDate) {
-             
+
+    public VenueJPanel(JPanel rightJPanel, String username, int bookingId, Date bookingDate) {
+
         initComponents();
         this.rightJPanel = rightJPanel;
         this.username = username;
-        this.bookingId  = bookingId;
+        this.bookingId = bookingId;
         this.bookingDate = bookingDate;
-        
+
         loadVenues();
     }
-        
-        public void loadVenues(){
-        
-            try {
-                    Connection connection = (Connection) DBConnection.con();
-                    // Get venue (id = 3) vendors where admin has approved registration
-                    PreparedStatement st = connection.prepareStatement("Select vendor_id, vendor_name, concat(addr_line_1,\" \", addr_line_2) as address, email, phone_number from vendor_details where vendor_type_id=3 and registration_status=3");
 
-                    ResultSet rs = st.executeQuery();
-                    
-                    
-                    while(rs.next()){
-                      String vendorId = rs.getString(1);
-                      String vendorName = rs.getString(2);
-                      String address = rs.getString(3);
-                      String email = rs.getString(4);
-                      String phnNumber = rs.getString(5);
-                      
-                      String tblData[] = {vendorId, vendorName, address, email, phnNumber};
-                      DefaultTableModel tblModel = (DefaultTableModel)tblVenueVendors.getModel();
-                      tblModel.addRow(tblData);
-                    }
-                    
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
-                } 
+    public void loadVenues() {
+
+        VendorController vc = new VendorController();
+        VendorDetails vd = new VendorDetails();
+        vd.setVendorTypeId("3");
+
+        try {
+
+            ResultSet rs = vc.readVendorDetails(vd);
+
+            while (rs.next()) {
+                String vendorId = rs.getString(1);
+                String vendorName = rs.getString(2);
+                String address = rs.getString(3);
+                String email = rs.getString(4);
+                String phnNumber = rs.getString(5);
+
+                String tblData[] = {vendorId, vendorName, address, email, phnNumber};
+                DefaultTableModel tblModel = (DefaultTableModel) tblVenueVendors.getModel();
+                tblModel.addRow(tblData);
+            }
+
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
         }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -238,61 +244,43 @@ public class VenueJPanel extends javax.swing.JPanel {
 
     private void btnVenueRequestToBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVenueRequestToBookActionPerformed
         int rowSelected = tblVenueVendors.getSelectedRow();
-        if(rowSelected < 0){
+        if (rowSelected < 0) {
             JOptionPane.showMessageDialog(this, "Select a record to request booking");
             return;
         }
         rowSelected = tblVenueVendors.convertRowIndexToModel(rowSelected);
         DefaultTableModel model = (DefaultTableModel) tblVenueVendors.getModel();
-       
-        Integer id = Integer.parseInt(model.getValueAt(rowSelected, 0).toString());
-        
-        
-        
-        try {
-                    Connection connection = (Connection) DBConnection.con();
-                    
-                    PreparedStatement st1 = connection.prepareStatement("Select vendor_id from v_vendor_booking_details where vendor_id = ? and booking_date=? and status in (1, 3)");
 
-                    st1.setInt(1, id);
-                    st1.setDate(2, new java.sql.Date(bookingDate.getTime()));
-                    
-                    ResultSet rs = st1.executeQuery();
-                    
-                       if(rs.next()){
-                          JOptionPane.showMessageDialog(this, "Vendor is unavailable for the selected date");                             
-                       }
-                       
-                       else{
-                    
-                    
-                    String insertTableSQL = "INSERT INTO booking_event_details(booking_id, org_id, vendor_id, status) VALUES(?,?,?,?) ;";
-                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(insertTableSQL);
-                    st.setInt(1, bookingId);
-                    st.setInt(2, 3); // venue is 3
-                    st.setInt(3, id);
-                    st.setInt(4, 1);
-                                                                             
-                    Integer returnedValue = st.executeUpdate();
-                    if (returnedValue>0) {
-                        
-                        JOptionPane.showMessageDialog(this, "Venue is requested");
-                    // reload grid
-        TableRowSorter<DefaultTableModel> tableRowSorter = new TableRowSorter(model);
-        tblVenueVendors.setRowSorter(tableRowSorter);
-        tableRowSorter.setRowFilter(null);
-        // loadVenues();
-        
-                        
-                    } else {
-                        JOptionPane.showMessageDialog(this, "Something went wrong");
-                    }
-                       }
-                    
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
-                }
-        
+        Integer id = Integer.parseInt(model.getValueAt(rowSelected, 0).toString());
+
+        BookingEventController bec = new BookingEventController();
+        BookingEventDetails bed = new BookingEventDetails();
+        bed.setBookingId(bookingId);
+        bed.setOrgId(3);
+        bed.setVendorId(id);
+        bed.setStatus(1);
+
+        VVendorBookingDetails vbd = new VVendorBookingDetails();
+        vbd.setBookingDate(bookingDate);
+        vbd.setVendorId(id);
+        int vendorIdFromDB = 0;
+        vendorIdFromDB = bec.getVendorIdFromDB(vbd);
+        if (vendorIdFromDB > 0) {
+            JOptionPane.showMessageDialog(this, "Vendor is unavailable for the selected date");
+        } else {
+            
+            Integer returnedValue = bec.insertBookingDetails(bed);
+            if (returnedValue > 0) {
+                
+                JOptionPane.showMessageDialog(this, "Venue is requested");
+               
+               // loadVenues();
+                
+            } else {
+                JOptionPane.showMessageDialog(this, "Something went wrong");
+            }
+        }
+
     }//GEN-LAST:event_btnVenueRequestToBookActionPerformed
 
 

@@ -4,11 +4,22 @@
  */
 package ui.Admin;
 
+import java.awt.CardLayout;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
+import model.DBConnection;
+import ui.Customer.CustomerCancelBookingJFrame;
+import ui.Customer.CustomerViewBookingsJFrame;
 
 /**
  *
- * @author Avinash Reddy
+ * @author Harsh
  */
 public class CustomerRequestJPanel extends javax.swing.JPanel {
 
@@ -23,8 +34,37 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
     public CustomerRequestJPanel(JPanel rightJPanel) {
         initComponents();
         this.rightJPanel = rightJPanel;
-    }
+        
+        loadGrid();     
+        
+     }
+    
+    public void loadGrid(){
+        try {
+            Connection connection = (Connection) DBConnection.con();
 
+            PreparedStatement st = connection.prepareStatement("SELECT concat(ud.first_name, \" \", ud.last_name) as name, bed.book_event_id, ol.org_type, vd.vendor_name, bd.booking_date, bd.special_request, bed.cancellation_reason FROM booking_event_details bed inner join booking_details bd on bed.booking_id = bd.booking_id inner join organization_list ol on ol.org_id = bed.org_id inner join vendor_details vd on vd.vendor_id = bed.vendor_id inner join user_details ud on bd.user_id = ud.user_id  and bed.status = 4;");
+
+            ResultSet rs = st.executeQuery();
+
+            while (rs.next()) {
+                String fullName = rs.getString(1);
+                String bookingId = rs.getString(2);
+                String orgType = rs.getString(3);
+                String vendorName = rs.getString(4);
+                String bookingDate = rs.getString(5);
+                String specialReq = rs.getString(6);
+                String cancellationReason = rs.getString(7);
+                String tblData[] = {fullName, bookingId, orgType, vendorName, bookingDate, specialReq, cancellationReason};
+                DefaultTableModel tblModel = (DefaultTableModel) tblCustomerRequests.getModel();
+                tblModel.addRow(tblData);
+            }
+        } 
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -39,14 +79,11 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        logoutButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        backButton = new javax.swing.JButton();
         approveButton = new javax.swing.JButton();
-        rejectButton = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblCustomerRequests = new javax.swing.JTable();
 
         jPanel1.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -62,9 +99,6 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Manage Customers Requests");
 
-        logoutButton.setText("Logout");
-        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -72,31 +106,17 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(545, 545, 545)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74))
+                .addContainerGap(448, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addContainerGap())
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        backButton.setText("Back");
-        backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        backButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
-            }
-        });
 
         approveButton.setText("Approve");
         approveButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -106,58 +126,34 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        rejectButton.setText("Reject");
-        rejectButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        rejectButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rejectButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
                 .addComponent(approveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
-                .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69))
+                .addGap(143, 143, 143))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(approveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(approveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblCustomerRequests.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8"
+                "Full Name", "Booking Id", "Vendor Type", "Vendor name", "Booking Date", "Special Request", "Cancellation Request"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblCustomerRequests);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -232,22 +228,53 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backButtonActionPerformed
-
     private void approveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_approveButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_approveButtonActionPerformed
+        int rowSelected = tblCustomerRequests.getSelectedRow();
+        rowSelected = tblCustomerRequests.convertRowIndexToModel(rowSelected);
+        DefaultTableModel model = (DefaultTableModel) tblCustomerRequests.getModel();
 
-    private void rejectButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rejectButtonActionPerformed
+        int id = Integer.parseInt(model.getValueAt(rowSelected, 1).toString());
+        if (rowSelected < 0) {
+            JOptionPane.showMessageDialog(this, "Select a record to approve Customer request.");
+            return;
+        }
+       
+            
+        try {
+            Connection connection = (Connection) DBConnection.con();
+
+            String updateTableSQL = "UPDATE booking_event_details SET status = 5 where book_event_id = ?;";
+            PreparedStatement st = (PreparedStatement) connection.prepareStatement(updateTableSQL);
+            st.setInt(1, id);
+            
+
+            int returnedValue = st.executeUpdate();
+            
+            if (returnedValue > 0) {
+                JOptionPane.showMessageDialog(this, "Customer request approved.");
+                
+                CustomerRequestJPanel shjp = new CustomerRequestJPanel(rightJPanel);
+                rightJPanel.add("CustomerRequestJPanel",shjp);
+                CardLayout layout = (CardLayout)rightJPanel.getLayout();
+                layout.next(rightJPanel);
+            
+//refresh();
+//                loadGrid();
+            } 
+            else {
+                JOptionPane.showMessageDialog(this, "Something went wrong");
+            }
+        
+
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+    }//GEN-LAST:event_approveButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton approveButton;
-    private javax.swing.JButton backButton;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -256,8 +283,6 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JButton logoutButton;
-    private javax.swing.JButton rejectButton;
+    private javax.swing.JTable tblCustomerRequests;
     // End of variables declaration//GEN-END:variables
 }

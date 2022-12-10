@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import model.DBConnection;
 import ui.Customer.CustomerLandingPageJFrame;
+import ui.HomeScreenJFrame;
 
 /**
  *
@@ -163,7 +164,6 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
         txtVendorUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
-        txtVendorPassword.setText("jPasswordField1");
         txtVendorPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -233,6 +233,11 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
         homeButton.setText("Home");
         homeButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeButtonActionPerformed(evt);
+            }
+        });
         jPanel1.add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 170, 70, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -330,6 +335,12 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         new VendorRegistrationJFrame().setVisible(true);
             dispose();
     }//GEN-LAST:event_registerButtonActionPerformed
+
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
+        // TODO add your handling code here:
+        new HomeScreenJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_homeButtonActionPerformed
 
     /**
      * @param args the command line arguments

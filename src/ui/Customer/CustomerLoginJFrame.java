@@ -4,15 +4,20 @@
  */
 package ui.Customer;
 
+import controller.CustomerController;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import model.DBConnection;
 import ui.HomeScreenJFrame;
 import ui.Vendor.VendorLandingPageJFrame;
 import ui.Vendor.VendorRegistrationJFrame;
+
+import model.UserDetails;
 
 /**
  *
@@ -297,33 +302,32 @@ public class CustomerLoginJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         String username = custUsernameText.getText();
-           String password = custPasswordText.getText();
+        String password = custPasswordText.getText();
            
            if(username.isBlank() || password.isBlank()){
              JOptionPane.showMessageDialog(this, "Please enter both username and password to login");
              return;
            }
            
+           UserDetails ud = new UserDetails();
+           CustomerController cc = new CustomerController();
+           ud.setUsername(username);
+           ud.setPassword(password);
            
-            try {
-                    Connection connection = (Connection) DBConnection.con();
-
-                    PreparedStatement st = connection.prepareStatement("Select username, password from user_details where username=? and password=?");
-
-                    st.setString(1, username);
-                    st.setString(2, password);
-                    ResultSet rs = st.executeQuery();
-                    if (rs.next()) {
-                        JOptionPane.showMessageDialog(this, "You have successfully logged in");
-                        new CustomerLandingPageJFrame(username, 0, null).setVisible(true);
-                        dispose();
-                        
-                    } else {
-                        JOptionPane.showMessageDialog(this, "Wrong Username & Password");
-                    }
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
-                }  
+           ResultSet rs = cc.readUserDetails(ud);
+           
+        try {
+            if (rs.next()) {
+                JOptionPane.showMessageDialog(this, "You have successfully logged in");
+                new CustomerLandingPageJFrame(username, 0, null).setVisible(true);
+                dispose();
+                
+            } else {
+                JOptionPane.showMessageDialog(this, "Wrong Username & Password");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerLoginJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }//GEN-LAST:event_loginButtonActionPerformed
 

@@ -9,8 +9,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
+import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 import model.DBConnection;
+import ui.HomeScreenJFrame;
 
 /**
  *
@@ -34,19 +38,19 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
         try {
                     Connection connection = (Connection) DBConnection.con();
                     
-                    PreparedStatement st = connection.prepareStatement("SELECT booking_id, booking_date, vendor_id, status, username FROM v_vendor_booking_details where where vendor_id is not null");
-
+                    PreparedStatement st = connection.prepareStatement("SELECT bed.book_event_id, ol.org_type, vd.vendor_name, bd.booking_date, bd.special_request, CASE WHEN bed.status = 1 THEN \"Waiting for approval\" ELSE CASE WHEN bed.status = 2 THEN \"Rejected\" ELSE CASE WHEN bed.status = 4 THEN \"Cancelation requested\" ELSE \"Approved\" END END END as status, bed.booking_id FROM booking_event_details bed inner join booking_details bd on bed.booking_id = bd.booking_id inner join organization_list ol on ol.org_id = bed.org_id inner join vendor_details vd on vd.vendor_id = bed.vendor_id inner join user_details ud on bd.user_id = ud.user_id  and ud.username = ?;");
+                    st.setString(1, username);
                     ResultSet rs = st.executeQuery();
                     
-                    
                     while(rs.next()){
-                      String vendorId = rs.getString(1);
-                      String vendorName = rs.getString(2);
-                      String address = rs.getString(3);
-                      String email = rs.getString(4);
-                      String phnNumber = rs.getString(5);
-                      
-                      String tblData[] = {vendorId, vendorName, address, email, phnNumber};
+                      String bookingEventId = rs.getString(1);
+                      String vendorName = rs.getString(3);
+                      String event = rs.getString(2);
+                      String bookingDateFromDB = rs.getString(4);
+                      String specialReq = rs.getString(5);
+                      String status = rs.getString(6);
+                      String grid_booking_id = rs.getString(7);
+                      String tblData[] = {bookingEventId, vendorName, event, bookingDateFromDB, specialReq, status, grid_booking_id};
                       DefaultTableModel tblModel = (DefaultTableModel)tblCustomerBookings.getModel();
                       tblModel.addRow(tblData);
                     }
@@ -58,6 +62,12 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
     }
     public CustomerViewBookingsJFrame() {
         initComponents();
+    }
+    private void search(String str){
+    DefaultTableModel model = (DefaultTableModel)tblCustomerBookings.getModel();
+    TableRowSorter<DefaultTableModel> tableRowSorter = new TableRowSorter(model);
+    tblCustomerBookings.setRowSorter(tableRowSorter);
+    tableRowSorter.setRowFilter(RowFilter.regexFilter("(?i)"+str));
     }
 
     /**
@@ -78,15 +88,17 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
-        deleteButton = new javax.swing.JButton();
+        btnCancelBooking = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        searchText = new javax.swing.JTextField();
+        txtSearchVendor = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCustomerBookings = new javax.swing.JTable();
-        logoutButton = new javax.swing.JButton();
+        btnClear = new javax.swing.JButton();
+        btnSearch = new javax.swing.JButton();
+        logoutButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -141,8 +153,13 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        deleteButton.setText("Cancel Booking");
-        deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        btnCancelBooking.setText("Cancel Booking");
+        btnCancelBooking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        btnCancelBooking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelBookingActionPerformed(evt);
+            }
+        });
 
         backButton.setText("Back");
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -156,43 +173,72 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel5.setText("Search");
+        jLabel5.setText("Search by Vendor");
 
-        searchText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+        txtSearchVendor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         tblCustomerBookings.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Booking Id", "Event", "Vendor", "Date"
+                "Id", "Vendor", "Event", "Date", "Special Request", "Status", "Booking Id"
             }
         ));
         jScrollPane1.setViewportView(tblCustomerBookings);
+        if (tblCustomerBookings.getColumnModel().getColumnCount() > 0) {
+            tblCustomerBookings.getColumnModel().getColumn(0).setMinWidth(100);
+            tblCustomerBookings.getColumnModel().getColumn(0).setPreferredWidth(100);
+            tblCustomerBookings.getColumnModel().getColumn(0).setMaxWidth(100);
+            tblCustomerBookings.getColumnModel().getColumn(2).setMinWidth(150);
+            tblCustomerBookings.getColumnModel().getColumn(2).setPreferredWidth(150);
+            tblCustomerBookings.getColumnModel().getColumn(2).setMaxWidth(150);
+        }
+
+        btnClear.setText("Clear");
+        btnClear.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
+
+        btnSearch.setText("Search");
+        btnSearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        btnSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSearchActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(searchText, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(158, 158, 158))
-            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(42, 42, 42)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(43, 43, 43)
+                        .addComponent(txtSearchVendor, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(81, 81, 81)
+                        .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)
+                        .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1301, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(54, 54, 54)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(searchText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69)
+                    .addComponent(txtSearchVendor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(56, 56, 56)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(77, Short.MAX_VALUE))
         );
@@ -214,8 +260,13 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
                 .addContainerGap(48, Short.MAX_VALUE))
         );
 
-        logoutButton.setText("Logout");
-        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        logoutButton1.setText("Logout");
+        logoutButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        logoutButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -224,9 +275,7 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(690, 690, 690)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(196, 196, 196))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -241,9 +290,14 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
                         .addGap(1122, 1122, 1122)
                         .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
-                        .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnCancelBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(1326, Short.MAX_VALUE)
+                    .addComponent(logoutButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(186, 186, 186)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,17 +308,20 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCancelBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(175, 175, 175)
+                    .addComponent(logoutButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(603, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -280,7 +337,7 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGap(0, 838, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -292,8 +349,76 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
+        new CustomerLandingPageJFrame(username, bookingId, bookingDate).setVisible(true);
+                dispose();
     }//GEN-LAST:event_backButtonActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+       txtSearchVendor.setText(null);
+       
+       search("");
+    }//GEN-LAST:event_btnClearActionPerformed
+
+    private void logoutButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButton1ActionPerformed
+                username = null;
+                bookingId = 0;
+                bookingDate = null;
+                new HomeScreenJFrame().setVisible(true);
+                dispose();
+    }//GEN-LAST:event_logoutButton1ActionPerformed
+
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+
+        String searchVendor = txtSearchVendor.getText();
+        search(searchVendor);
+
+    }//GEN-LAST:event_btnSearchActionPerformed
+
+    private void btnCancelBookingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelBookingActionPerformed
+        
+        
+        int rowSelected = tblCustomerBookings.getSelectedRow();
+        rowSelected = tblCustomerBookings.convertRowIndexToModel(rowSelected);
+        DefaultTableModel model = (DefaultTableModel) tblCustomerBookings.getModel();
+
+        int id = Integer.parseInt(model.getValueAt(rowSelected, 0).toString());
+        int grid_booking_id = Integer.parseInt(model.getValueAt(rowSelected, 6).toString());
+        
+        if (rowSelected < 0) {
+            JOptionPane.showMessageDialog(this, "Select a record to cancel vendor booking");
+            return;
+        }
+       
+        // Validation (Customer cannot request cancellation again for event which already requested for cancellation
+        try {
+            Connection connection = (Connection) DBConnection.con();
+
+            String selectTableSQL = "SELECT status from booking_event_details where book_event_id = ? and booking_id = ?;";
+            PreparedStatement st = (PreparedStatement) connection.prepareStatement(selectTableSQL);
+            st.setInt(1, id);
+            st.setInt(2, grid_booking_id);
+                System.out.println(id);
+                System.out.println(grid_booking_id);
+            ResultSet rs = st.executeQuery();
+            
+            while(rs.next()){
+                int status = rs.getInt(1);
+                if(status == 4){
+                    JOptionPane.showMessageDialog(this, "Already requested for cancellation.");
+                    return;
+                }
+            }
+            
+            
+            
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+        
+        new CustomerCancelBookingJFrame(username, bookingId, bookingDate, id).setVisible(true);
+                dispose();
+        
+    }//GEN-LAST:event_btnCancelBookingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -332,7 +457,9 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
-    private javax.swing.JButton deleteButton;
+    private javax.swing.JButton btnCancelBooking;
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnSearch;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -346,8 +473,8 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JButton logoutButton;
-    private javax.swing.JTextField searchText;
+    private javax.swing.JButton logoutButton1;
     private javax.swing.JTable tblCustomerBookings;
+    private javax.swing.JTextField txtSearchVendor;
     // End of variables declaration//GEN-END:variables
 }

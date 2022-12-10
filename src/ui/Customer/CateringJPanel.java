@@ -4,6 +4,7 @@
  */
 package ui.Customer;
 
+import controller.VendorController;
 import java.awt.CardLayout;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import model.DBConnection;
+import model.VendorDetails;
 import ui.HomeScreenJFrame;
 
 /**
@@ -47,12 +49,13 @@ public class CateringJPanel extends javax.swing.JPanel {
     
     public void loadCaterers(){
         
+            VendorController vc = new VendorController();
+            VendorDetails vd = new VendorDetails();
+            vd.setVendorTypeId("1");
+        
             try {
-                    Connection connection = (Connection) DBConnection.con();
-                    // Get catering (id = 1) vendors where admin has approved registration
-                    PreparedStatement st = connection.prepareStatement("Select vendor_id, vendor_name, concat(addr_line_1,\" \", addr_line_2) as address, email, phone_number from vendor_details where vendor_type_id=1 and registration_status=3");
-
-                    ResultSet rs = st.executeQuery();
+                   
+                    ResultSet rs = vc.readVendorDetails(vd);
                     
                     
                     while(rs.next()){

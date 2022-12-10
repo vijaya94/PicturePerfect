@@ -5,7 +5,14 @@
 package ui.Admin;
 
 import java.awt.CardLayout;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+import model.DBConnection;
 
 /**
  *
@@ -21,12 +28,40 @@ public class CustomersListJPanel extends javax.swing.JPanel {
         initComponents();
     }
     
-    
+    String username;
     public CustomersListJPanel(JPanel rightJPanel) {
         initComponents();
         this.rightJPanel = rightJPanel;
+        loadGrid();  
     }
+    
+    public void loadGrid(){
+        try {
+            Connection connection = (Connection) DBConnection.con();
 
+            PreparedStatement st = connection.prepareStatement("SELECT user_id,concat(first_name, \" \", last_name) as name, age, gender, email, phone_number, concat(address_line_1, \" \", address_line_2) as address, username FROM user_details;");
+
+            ResultSet rs = st.executeQuery();
+
+            while (rs.next()) {
+                String user_id = rs.getString(1);
+                String name = rs.getString(2);
+                String age = rs.getString(3);
+                String gender = rs.getString(4);
+                String email = rs.getString(5);
+                String phone_number = rs.getString(6);
+                String address = rs.getString(7);
+                String username = rs.getString(8);
+                String tblData[] = {user_id, name, age, gender, email, phone_number, address, username};
+                DefaultTableModel tblModel = (DefaultTableModel) customerListTable.getModel();
+                tblModel.addRow(tblData);
+            }
+        } 
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,14 +77,12 @@ public class CustomersListJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        logoutButton = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        backButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
         viewButton = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        customerListTable = new javax.swing.JTable();
 
         jPanel2.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -65,9 +98,6 @@ public class CustomersListJPanel extends javax.swing.JPanel {
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Customers List");
 
-        logoutButton.setText("Logout");
-        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -75,31 +105,17 @@ public class CustomersListJPanel extends javax.swing.JPanel {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(545, 545, 545)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74))
+                .addContainerGap(556, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addContainerGap())
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-
-        backButton.setText("Back");
-        backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        backButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
-            }
-        });
 
         deleteButton.setText("Delete");
         deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -122,20 +138,17 @@ public class CustomersListJPanel extends javax.swing.JPanel {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
+                .addContainerGap(919, Short.MAX_VALUE)
                 .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
+                .addGap(30, 30, 30)
                 .addComponent(viewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69))
+                .addGap(144, 144, 144))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(viewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(15, Short.MAX_VALUE))
@@ -143,24 +156,15 @@ public class CustomersListJPanel extends javax.swing.JPanel {
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        customerListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8"
+                "Customer Id", "Name", "Age", "Gender", "Email", "Phone no", "Address", "Username"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(customerListTable);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -256,17 +260,23 @@ public class CustomersListJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backButtonActionPerformed
-
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_deleteButtonActionPerformed
 
     private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionPerformed
         // TODO add your handling code here:
-        CustomerListView shjp = new CustomerListView(rightJPanel);
+        int rowSelected = customerListTable.getSelectedRow();
+        rowSelected = customerListTable.convertRowIndexToModel(rowSelected);
+        DefaultTableModel model = (DefaultTableModel) customerListTable.getModel();
+        
+        
+        if (rowSelected < 0) {
+            JOptionPane.showMessageDialog(this, "Select a record to View.");
+            return;
+        }
+        username = model.getValueAt(rowSelected, 7).toString();
+        CustomerListView shjp = new CustomerListView(username, rightJPanel);
         rightJPanel.add("CustomerListView",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
@@ -274,7 +284,7 @@ public class CustomersListJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backButton;
+    private javax.swing.JTable customerListTable;
     private javax.swing.JButton deleteButton;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
@@ -285,8 +295,6 @@ public class CustomersListJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JButton logoutButton;
     private javax.swing.JButton viewButton;
     // End of variables declaration//GEN-END:variables
 }

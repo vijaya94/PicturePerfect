@@ -5,6 +5,7 @@
 package ui.Admin;
 
 import ui.Customer.CustomerLandingPageJFrame;
+import ui.HomeScreenJFrame;
 
 /**
  *
@@ -18,7 +19,12 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
     public AdminLandingPageJFrame() {
         initComponents();
     }
-
+    String username;
+    
+    public AdminLandingPageJFrame(String username) {
+        initComponents();
+        this.username = username;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,6 +48,7 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
         vendorsButton = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         customersButton = new javax.swing.JButton();
+        logoutBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -186,6 +193,14 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 480));
 
+        logoutBtn.setText("Logout");
+        logoutBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 160, -1, 35));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -212,15 +227,22 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
 
     private void customersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customersButtonActionPerformed
         // TODO add your handling code here:
-        new AdminManageCustomerJFrame().setVisible(true);
+        new AdminManageCustomerJFrame(username).setVisible(true);
             dispose();
     }//GEN-LAST:event_customersButtonActionPerformed
 
     private void vendorsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorsButtonActionPerformed
         // TODO add your handling code here:
-        new AdminManageVendorJFrame().setVisible(true);
+        new AdminManageVendorJFrame(username).setVisible(true);
             dispose();
     }//GEN-LAST:event_vendorsButtonActionPerformed
+
+    private void logoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBtnActionPerformed
+        // TODO add your handling code here:
+        username = null;
+        new HomeScreenJFrame().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_logoutBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -271,6 +293,7 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JButton logoutBtn;
     private javax.swing.JButton vendorsButton;
     // End of variables declaration//GEN-END:variables
 }

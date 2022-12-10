@@ -5,7 +5,13 @@
 package ui.Admin;
 
 import java.awt.CardLayout;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+import model.DBConnection;
 
 /**
  *
@@ -21,11 +27,40 @@ public class VendorListJPanel extends javax.swing.JPanel {
         initComponents();
     }
     
-    public VendorListJPanel(JPanel rightJPanel) {
+    String username;
+    public VendorListJPanel(String username, JPanel rightJPanel) {
         initComponents();
         this.rightJPanel = rightJPanel;
+        this.username = username;
+        loadGrid();
     }
 
+    public void loadGrid(){
+//        try {
+//            Connection connection = (Connection) DBConnection.con();
+//
+//            PreparedStatement st = connection.prepareStatement("Select vendor_id, vendor_name, concat(addr_line_1,\" \", addr_line_2) as address, email, phone_number from vendor_details where vendor_type_id= ? and registration_status=3;");
+//
+//            ResultSet rs = st.executeQuery();
+//
+//            while (rs.next()) {
+//                String fullName = rs.getString(1);
+//                String bookingId = rs.getString(2);
+//                String orgType = rs.getString(3);
+//                String vendorName = rs.getString(4);
+//                String bookingDate = rs.getString(5);
+//                String specialReq = rs.getString(6);
+//                String tblData[] = {fullName, bookingId, orgType, vendorName, bookingDate, specialReq};
+//                DefaultTableModel tblModel = (DefaultTableModel) tblCustomerRequests.getModel();
+//                tblModel.addRow(tblData);
+//            }
+//        } 
+//        catch (SQLException sqlException) {
+//            sqlException.printStackTrace();
+//        }
+
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,7 +77,6 @@ public class VendorListJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        logoutButton = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         backButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
@@ -65,9 +99,6 @@ public class VendorListJPanel extends javax.swing.JPanel {
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Vendors List");
 
-        logoutButton.setText("Logout");
-        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -75,20 +106,14 @@ public class VendorListJPanel extends javax.swing.JPanel {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(584, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(431, 431, 431)
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74))
+                .addGap(573, 573, 573))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addContainerGap())
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
@@ -308,7 +333,6 @@ public class VendorListJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton logoutButton;
     private javax.swing.JButton viewButton;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,6 +4,7 @@
  */
 package ui.Customer;
 
+import controller.VendorController;
 import java.awt.CardLayout;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import model.DBConnection;
+import model.VendorDetails;
 import ui.HomeScreenJFrame;
 
 /**
@@ -42,12 +44,13 @@ public class MusicJPanel extends javax.swing.JPanel {
         this.bookingId  = bookingId;
         this.bookingDate = bookingDate;
         
-        try {
-                    Connection connection = (Connection) DBConnection.con();
-                    // Get music (id = 4) vendors where admin has approved registration
-                    PreparedStatement st = connection.prepareStatement("Select vendor_id, vendor_name, concat(addr_line_1,\" \", addr_line_2) as address, email, phone_number from vendor_details where vendor_type_id=4 and registration_status=3");
-
-                    ResultSet rs = st.executeQuery();
+        VendorController vc = new VendorController();
+            VendorDetails vd = new VendorDetails();
+            vd.setVendorTypeId("4");
+        
+            try {
+                   
+                    ResultSet rs = vc.readVendorDetails(vd);
                     
                     
                     while(rs.next()){
