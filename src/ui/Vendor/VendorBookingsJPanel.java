@@ -33,34 +33,33 @@ public class VendorBookingsJPanel extends javax.swing.JPanel {
         initComponents();
         this.rightJPanel = rightJPanel;
         
-        //loadApprovedBookings();
+        loadApprovedBookings();
     }
-       /* public void loadApprovedBookings(){
+        public void loadApprovedBookings(){
         
             try {
                     Connection connection = (Connection) DBConnection.con();
                     // Get venue (id = 3) vendors where admin has approved registration
-                    PreparedStatement st = connection.prepareStatement("Select c.first_name, b.booking_id, b.event_type, b.booking_date, b.special_request, bed.vendor_id from user_details c, booking_details b, booking_event_details bed where b.booking_id=bed.booking_id");
+                    PreparedStatement st = connection.prepareStatement("SELECT booking_id, booking_date, event_type, special_request, user_id FROM booking_details WHERE booking_id IN (SELECT booking_id FROM booking_event_details WHERE status = '3')");
                     
                     ResultSet rs = st.executeQuery();
                     //System.out.println("Ran till here");
                     while(rs.next()){
-                      String customerName = rs.getString(1);
-                      String booking_id = rs.getString(2);
+                      String booking_id = rs.getString(1);
+                      String booking_date = rs.getString(2);
                       String event_type = rs.getString(3);
-                      String booking_date = rs.getString(4);
-                      String special_request = rs.getString(5);
-                     String vendor_id = rs.getString(6);
+                      String special_request = rs.getString(4);
+                      String user_id = rs.getString(5);
                       //System.out.println("Ran while");
                       
-                      String tblData[] = {customerName, booking_id, event_type, booking_date, special_request, vendor_id};
+                      String tblData[] = {booking_id, booking_date, event_type, special_request, user_id};
                       DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
                       tblModel.addRow(tblData);
                     }
                     
                 } catch (SQLException sqlException) {
                     sqlException.printStackTrace();
-                } /*
+                }
         }
 
     /**
@@ -148,7 +147,7 @@ public class VendorBookingsJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6"
+                "Booking ID", "Booking Date", "Event type", "Special Request", "User ID"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -161,8 +160,8 @@ public class VendorBookingsJPanel extends javax.swing.JPanel {
             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel5Layout.createSequentialGroup()
                     .addGap(72, 72, 72)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 818, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(302, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 667, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(453, Short.MAX_VALUE)))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
