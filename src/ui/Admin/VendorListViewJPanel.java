@@ -4,13 +4,16 @@
  */
 package ui.Admin;
 
+import java.awt.CardLayout;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import model.DBConnection;
+import ui.Vendor.VendorLoginJFrame;
 
 /**
  *
@@ -380,11 +383,98 @@ public class VendorListViewJPanel extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
+        VendorListJPanel shjp = new VendorListJPanel(username, rightJPanel);
+        rightJPanel.add("VendorListJPanel",shjp);
+        CardLayout layout = (CardLayout)rightJPanel.getLayout();
+        layout.next(rightJPanel);
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
         // TODO add your handling code here:
+        String vendorName = txtVendorName.getText();
+        int vendorType = cmbVendorType.getSelectedIndex();
+        String email = txtVendorEmail.getText();
+        String phoneNumber = txtVendorPhnNumber.getText();
+        String addrLine1 = txtVendorAddrLine1.getText();
+        String addrLine2 = txtVendorAddrLine2.getText();
+        String username = txtVendorUsername.getText();
         
+        
+        if (txtVendorName.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Vendor name is required");
+            return;
+        }
+        
+        if (cmbVendorType.getSelectedItem().equals(null)) {
+            JOptionPane.showMessageDialog(this, "Vendor type is required");
+            return;
+        }
+        
+        if (txtVendorEmail.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Email Id is required");
+            return;
+        }
+        try {
+            if (!txtVendorEmail.getText().matches("^[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$")) {
+                throw new Exception("Email Id entered is incorrect");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Email Id entered is incorrect");
+            System.out.println(e);
+            return;
+        }
+        
+        if (phoneNumber.length() == 0) {
+            JOptionPane.showMessageDialog(this, "Phone number is required");
+            return;
+        }
+        long cellPhNum = 0;
+        try {
+            if (phoneNumber.matches("[0-9]+") && phoneNumber.charAt(0) != '0' && phoneNumber.length() == 10) {
+                cellPhNum = Long.parseLong(phoneNumber);
+            } else {
+                throw new Exception("Contact Number entered is incorrect");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Phone number entered is incorrect ");
+            System.out.println(e);
+            return;
+        }
+        
+         if (txtVendorAddrLine1.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Vendor name is required");
+            return;
+        }
+         
+          if (txtVendorAddrLine2.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Vendor name is required");
+            return;
+        }
+        
+        try {
+                    Connection connection = (Connection) DBConnection.con();
+                    String updateTableSQL = "UPDATE vendor_details SET vendor_name = ?, email = ?, phone_number = ?, "
+                            + "addr_line_1 = ?, addr_line_2 = ?, vendor_type_id = ? WHERE username = ?;";
+                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(updateTableSQL);
+                    st.setString(1, vendorName);
+                    st.setString(2, email);
+                    st.setString(3, phoneNumber);
+                    st.setString(4, addrLine1);
+                    st.setString(5, addrLine2); 
+                    st.setInt(6, vendorType);
+                    st.setString(7, username);
+                                                          
+                    Integer returnedValue = st.executeUpdate();
+                    if (returnedValue>0) {
+                        JOptionPane.showMessageDialog(this, "Updated Successfully");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Something went wrong");
+                    }
+                    
+                    
+                } catch (SQLException sqlException) {
+                    sqlException.printStackTrace();
+                }
         
     }//GEN-LAST:event_updateButtonActionPerformed
 
