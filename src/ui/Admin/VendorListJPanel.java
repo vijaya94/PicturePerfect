@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import model.DBConnection;
@@ -36,28 +37,29 @@ public class VendorListJPanel extends javax.swing.JPanel {
     }
 
     public void loadGrid(){
-//        try {
-//            Connection connection = (Connection) DBConnection.con();
-//
-//            PreparedStatement st = connection.prepareStatement("Select vendor_id, vendor_name, concat(addr_line_1,\" \", addr_line_2) as address, email, phone_number from vendor_details where vendor_type_id= ? and registration_status=3;");
-//
-//            ResultSet rs = st.executeQuery();
-//
-//            while (rs.next()) {
-//                String fullName = rs.getString(1);
-//                String bookingId = rs.getString(2);
-//                String orgType = rs.getString(3);
-//                String vendorName = rs.getString(4);
-//                String bookingDate = rs.getString(5);
-//                String specialReq = rs.getString(6);
-//                String tblData[] = {fullName, bookingId, orgType, vendorName, bookingDate, specialReq};
-//                DefaultTableModel tblModel = (DefaultTableModel) tblCustomerRequests.getModel();
-//                tblModel.addRow(tblData);
-//            }
-//        } 
-//        catch (SQLException sqlException) {
-//            sqlException.printStackTrace();
-//        }
+        try {
+            Connection connection = (Connection) DBConnection.con();
+
+            PreparedStatement st = connection.prepareStatement("SELECT vendor_id, ol.org_type, vendor_name, email, phone_number, concat(addr_line_1, \" \" ,addr_line_2) as address, username FROM vendor_details vd INNER JOIN organization_list ol ON vd.vendor_type_id = ol.org_id WHERE registration_status = 3;");
+
+            ResultSet rs = st.executeQuery();
+
+            while (rs.next()) {
+                String vendor_id = rs.getString(1);
+                String org_type = rs.getString(2);
+                String vendor_name = rs.getString(3);
+                String email = rs.getString(4);
+                String phone_number = rs.getString(5);
+                String address = rs.getString(6);
+                String username = rs.getString(7);
+                String tblData[] = {vendor_id, org_type, vendor_name, email, phone_number, address, username};
+                DefaultTableModel tblModel = (DefaultTableModel) vedorListTbl.getModel();
+                tblModel.addRow(tblData);
+            }
+        } 
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
 
     }
     
@@ -78,12 +80,10 @@ public class VendorListJPanel extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        backButton = new javax.swing.JButton();
-        deleteButton = new javax.swing.JButton();
         viewButton = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        vedorListTbl = new javax.swing.JTable();
 
         jPanel3.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -118,22 +118,6 @@ public class VendorListJPanel extends javax.swing.JPanel {
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
-        backButton.setText("Back");
-        backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        backButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
-            }
-        });
-
-        deleteButton.setText("Delete");
-        deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        deleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteButtonActionPerformed(evt);
-            }
-        });
-
         viewButton.setText("View");
         viewButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         viewButton.addActionListener(new java.awt.event.ActionListener() {
@@ -147,45 +131,29 @@ public class VendorListJPanel extends javax.swing.JPanel {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
+                .addContainerGap(1063, Short.MAX_VALUE)
                 .addComponent(viewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69))
+                .addGap(147, 147, 147))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(viewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(viewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        vedorListTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8"
+                "Vendor Id", "Vendor Type", "Name", "Address", "Email", "Phone No", "Username"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(vedorListTbl);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -302,17 +270,21 @@ public class VendorListJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backButtonActionPerformed
-
-    private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_deleteButtonActionPerformed
-
     private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionPerformed
         // TODO add your handling code here:
-        VendorListViewJPanel shjp = new VendorListViewJPanel(rightJPanel);
+        int rowSelected = vedorListTbl.getSelectedRow();
+        rowSelected = vedorListTbl.convertRowIndexToModel(rowSelected);
+        DefaultTableModel model = (DefaultTableModel) vedorListTbl.getModel();
+        
+        
+        if (rowSelected < 0) {
+            JOptionPane.showMessageDialog(this, "Select a record to View.");
+            return;
+        }
+        username = model.getValueAt(rowSelected, 6).toString();
+        
+        
+        VendorListViewJPanel shjp = new VendorListViewJPanel(username, rightJPanel);
         rightJPanel.add("VendorListViewJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
@@ -320,8 +292,6 @@ public class VendorListJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backButton;
-    private javax.swing.JButton deleteButton;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -332,7 +302,7 @@ public class VendorListJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable vedorListTbl;
     private javax.swing.JButton viewButton;
     // End of variables declaration//GEN-END:variables
 }
