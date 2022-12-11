@@ -4,6 +4,9 @@
  */
 package ui.Customer;
 
+import controller.BookingController;
+import controller.CustomerController;
+import controller.EnterpriseController;
 import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,6 +16,12 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 import model.DBConnection;
 import ui.HomeScreenJFrame;
+import java.sql.ResultSet;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import model.BookingDetails;
+import model.EnterprisesList;
+import model.UserDetails;
 
 /**
  *
@@ -26,34 +35,64 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
     String username;
     int bookingId;
     Date bookingDate;
+
     public CustomerLandingPageJFrame(String username, int bookingId, Date bookingDate) {
         this.username = username;
         this.bookingId = bookingId;
         this.bookingDate = bookingDate;
         initComponents();
-        loadEventType();
+        if (bookingId == 0) {
+            loadEventType();
+        } else {
+            loadBookingForm();
+        }
+
     }
-    
-    public CustomerLandingPageJFrame(){
+
+    public CustomerLandingPageJFrame() {
         initComponents();
     }
-    
-    public void loadEventType(){
+
+    public void loadEventType() {
+        cmbEventType.setSelectedItem(null);
         try {
-                    Connection connection = (Connection) DBConnection.con();
+            EnterpriseController ec = new EnterpriseController();
+            ResultSet rs = ec.readUserDetails();
+            while (rs.next()) {
+                cmbEventType.addItem(rs.getString(2));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerLandingPageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
-                    PreparedStatement st = connection.prepareStatement("Select * from enterprises_list");
+    }
 
-                    ResultSet rs = st.executeQuery();
-                    
-                    
-                     while (rs.next()) {
-                        cmbEventType.addItem(rs.getString(2));
-                     }
-                    
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
+    public void loadBookingForm() {
+        loadEventType();
+        try {
+            BookingController bc = new BookingController();
+            BookingDetails bd = new BookingDetails();
+            bd.setBookingId(bookingId);
+            ResultSet rs = bc.readBookingDetails(bd);
+            EnterpriseController ec = new EnterpriseController();
+            EnterprisesList el = new EnterprisesList();
+
+            int event_type;
+            if (rs.next()) {
+                event_type = rs.getInt(3);
+                el.setEnterpriseId(event_type);
+                ResultSet rs1 = ec.readUserDetails(el);
+                if (rs1.next()) {
+                    cmbEventType.setSelectedItem(rs1.getString(2));
+                    dtBookEvent.setDate(bookingDate);
+                    txtCustSpecialRequest.setText(rs.getString(5));
                 }
+
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerLandingPageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     /**
@@ -85,7 +124,6 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         bookEventButton = new javax.swing.JButton();
         viewDetailsButton = new javax.swing.JButton();
         viewBookingsButton = new javax.swing.JButton();
-        logoutButton = new javax.swing.JButton();
         dtBookEvent = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -153,7 +191,7 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Date");
 
-        cmbEventType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Birthday" }));
+        cmbEventType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Birthday" }));
         cmbEventType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         txtCustSpecialRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
@@ -260,14 +298,6 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
             }
         });
 
-        logoutButton.setText("Logout");
-        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        logoutButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logoutButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -275,9 +305,7 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(690, 690, 690)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(129, 129, 129))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -307,10 +335,8 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,51 +386,56 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCustSpecialRequestActionPerformed
 
     private void bookEventButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookEventButtonActionPerformed
-        
+
         int eventType = cmbEventType.getSelectedIndex();
         Date bookEvent = dtBookEvent.getDate();
         String specialRequest = txtCustSpecialRequest.getText();
-        int userId =0; 
+
+        BookingDetails bd = new BookingDetails();
+        BookingController bc = new BookingController();
+
+        bd.setBookingDate(bookEvent);
+        bd.setEventType(eventType);
+        bd.setSpecialRequest(specialRequest);
+        UserDetails ud = new UserDetails();
+        CustomerController cc = new CustomerController();
+        ud.setUsername(username);
+        ResultSet rs1 = cc.readUserDetails(ud);
+
+        int userId = 0;
         try {
-                    Connection connection = (Connection) DBConnection.con();
-                    
-                    PreparedStatement st1 = connection.prepareStatement("Select user_id from user_details where username = ?");
-                    st1.setString(1,username);
-                    ResultSet rs1 = st1.executeQuery();
-                    
-                    
-                     while (rs1.next()) {
-                        userId = rs1.getInt(1);
-                     }
-                    
-                                      
-                    String insertTableSQL = "INSERT INTO booking_details(user_id, event_type, booking_date, special_request) VALUES(?,?,?,?);";
-                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(insertTableSQL, PreparedStatement.RETURN_GENERATED_KEYS);
-                    st.setInt(1, userId);
-                    st.setInt(2, eventType);
-                    st.setDate(3, new java.sql.Date(bookEvent.getTime()));
-                    st.setString(4, specialRequest);
-                                                          
-                    Integer returnedValue = st.executeUpdate();
-                    if (returnedValue>0) {
-                        ResultSet rs = st.getGeneratedKeys();
-                        int generatedKey = 0;
-                        if (rs.next()) {
-                            generatedKey = rs.getInt(1);
-                            bookingId = generatedKey;
-                                }                        
-                        new CustomerBookEventJFrame(username, generatedKey, bookEvent).setVisible(true);
-                        dispose();
-                        JOptionPane.showMessageDialog(this, "Welcome");
-                    } else {
-                        JOptionPane.showMessageDialog(this, "Something went wrong");
-                    }
-                    
-                    
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
-                }
-        
+            while (rs1.next()) {
+                userId = rs1.getInt(1);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerLandingPageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        bd.setUserId(userId);
+        if (bookingId == 0) {
+            // insert
+
+            int generatedBookingId = bc.insertBookingDetails(bd);
+
+            if (generatedBookingId > 0) {
+
+                new CustomerBookEventJFrame(username, generatedBookingId, bookEvent).setVisible(true);
+                dispose();
+
+            } else {
+                JOptionPane.showMessageDialog(this, "Something went wrong");
+            }
+        } else {
+            // update
+            bd.setBookingId(bookingId);
+            if (bc.updateBookingDetails(bd) > 0) {
+                new CustomerBookEventJFrame(username, bookingId, bookEvent).setVisible(true);
+                dispose();
+            } else {
+                JOptionPane.showMessageDialog(this, "Something went wrong");
+            }
+        }
+
+
     }//GEN-LAST:event_bookEventButtonActionPerformed
 
     private void viewDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsButtonActionPerformed
@@ -418,11 +449,6 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         new CustomerViewBookingsJFrame().setVisible(true);
         dispose();
     }//GEN-LAST:event_viewBookingsButtonActionPerformed
-
-    private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
-        username = null;
-        new HomeScreenJFrame().setVisible(true);
-    }//GEN-LAST:event_logoutButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -478,7 +504,6 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JButton logoutButton;
     private javax.swing.JTextField txtCustSpecialRequest;
     private javax.swing.JButton viewBookingsButton;
     private javax.swing.JButton viewDetailsButton;

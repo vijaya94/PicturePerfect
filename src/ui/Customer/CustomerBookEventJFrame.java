@@ -6,6 +6,7 @@ package ui.Customer;
 
 import java.awt.CardLayout;
 import java.util.Date;
+import ui.HomeScreenJFrame;
 
 /**
  *
@@ -39,11 +40,9 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         leftJPanel = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jSeparator4 = new javax.swing.JSeparator();
         venueButton = new javax.swing.JButton();
         musicButton = new javax.swing.JButton();
         kidsEntertainmentButton = new javax.swing.JButton();
-        jSeparator5 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
         couplePackageButton = new javax.swing.JButton();
@@ -51,6 +50,8 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         decorationButton = new javax.swing.JButton();
         giftShopButton = new javax.swing.JButton();
         rentalTransportationButton = new javax.swing.JButton();
+        logoutBtn = new javax.swing.JButton();
+        backBtn = new javax.swing.JButton();
         rightJPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -68,8 +69,6 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
 
         jSeparator3.setBackground(new java.awt.Color(153, 0, 153));
-
-        jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
 
         venueButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         venueButton.setText("Venue");
@@ -95,11 +94,9 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 
-        jSeparator5.setBackground(new java.awt.Color(153, 0, 153));
-
         jSeparator7.setBackground(new java.awt.Color(153, 0, 153));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setText("Services");
 
         couplePackageButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -135,10 +132,26 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         });
 
         rentalTransportationButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        rentalTransportationButton.setText("Retal Transportation");
+        rentalTransportationButton.setText("Rental Transportation");
         rentalTransportationButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rentalTransportationButtonActionPerformed(evt);
+            }
+        });
+
+        logoutBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        logoutBtn.setText("Logout");
+        logoutBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutBtnActionPerformed(evt);
+            }
+        });
+
+        backBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        backBtn.setText("Back");
+        backBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backBtnActionPerformed(evt);
             }
         });
 
@@ -147,50 +160,42 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         leftJPanelLayout.setHorizontalGroup(
             leftJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(cateringButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(couplePackageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(decorationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(giftShopButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(kidsEntertainmentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(musicButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(rentalTransportationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(leftJPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(venueButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(leftJPanelLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(leftJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(cateringButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(leftJPanelLayout.createSequentialGroup()
+                        .addComponent(logoutBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(backBtn))))
+            .addGroup(leftJPanelLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(leftJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(couplePackageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(decorationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(giftShopButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kidsEntertainmentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(musicButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rentalTransportationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(venueButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(leftJPanelLayout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         leftJPanelLayout.setVerticalGroup(
             leftJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(leftJPanelLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel10)
-                .addGap(25, 25, 25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(leftJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cateringButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addComponent(couplePackageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -389,6 +394,21 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         layout.next(rightJPanel);
     }//GEN-LAST:event_rentalTransportationButtonActionPerformed
 
+    private void logoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBtnActionPerformed
+        // TODO add your handling code here:
+                username = null;
+                bookingId = 0;
+                bookingDate = null;
+                new HomeScreenJFrame().setVisible(true);
+                dispose();
+    }//GEN-LAST:event_logoutBtnActionPerformed
+
+    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+        new CustomerLandingPageJFrame(username, bookingId, bookingDate).setVisible(true);
+                dispose();
+        
+    }//GEN-LAST:event_backBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -425,6 +445,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backBtn;
     private javax.swing.JButton cateringButton;
     private javax.swing.JButton couplePackageButton;
     private javax.swing.JButton decorationButton;
@@ -438,12 +459,11 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSplitPane jSplitPane;
     private javax.swing.JButton kidsEntertainmentButton;
     private javax.swing.JPanel leftJPanel;
+    private javax.swing.JButton logoutBtn;
     private javax.swing.JButton musicButton;
     private javax.swing.JButton rentalTransportationButton;
     private javax.swing.JPanel rightJPanel;

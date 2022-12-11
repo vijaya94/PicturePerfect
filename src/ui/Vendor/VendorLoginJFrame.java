@@ -163,6 +163,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
         txtVendorUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
+        txtVendorPassword.setText("jPasswordField1");
         txtVendorPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);

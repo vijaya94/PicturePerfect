@@ -4,12 +4,16 @@
  */
 package ui.Customer;
 
+import controller.CustomerController;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import model.DBConnection;
+import model.UserDetails;
 
 /**
  *
@@ -384,35 +388,33 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         String addrLine2 = txtCustAddrLine2.getText();
         String username = txtCustUsername.getText();
         String password = txtCustPassword.getText();
-        
-        
+
         if (txtCustFirstName.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "First name is required");
             return;
         }
-        
+
         if (txtCustLastName.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Last name is required");
             return;
         }
-        
+
         if (txtCustAge.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Age is required");
             return;
-        }else if (!txtCustAge.getText().matches("[0-9]*")) {
+        } else if (!txtCustAge.getText().matches("[0-9]*")) {
             JOptionPane.showMessageDialog(this, "Age must be a number.");
             return;
-        }else if (Integer.parseInt(txtCustAge.getText())>100) {
+        } else if (Integer.parseInt(txtCustAge.getText()) > 100) {
             JOptionPane.showMessageDialog(this, "Age cannot be greater than 100");
             return;
         }
-        
+
         if (txtCustGender.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "First name is required");
             return;
         }
-        
-                
+
         if (txtCustEmail.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Email Id is required");
             return;
@@ -426,7 +428,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             System.out.println(e);
             return;
         }
-        
+
         if (phoneNum.length() == 0) {
             JOptionPane.showMessageDialog(this, "Contact Number is required");
             return;
@@ -443,103 +445,118 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             System.out.println(e);
             return;
         }
-        
+
         if (txtCustAddrLine1.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Address Line 1 is required");
             return;
         }
-        
+
         if (txtCustAddrLine2.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Address Line 2 is required");
             return;
         }
-        
+
         if (txtCustUsername.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Username is required");
             return;
         }
-        
+
         if (txtCustPassword.getText().length() == 0) {
             JOptionPane.showMessageDialog(this, "Password is required");
             return;
         }
-        
+
+        UserDetails ud = new UserDetails();
+        CustomerController cc = new CustomerController();
+        ud.setUsername(username);
+
+        ResultSet rs = cc.readUserDetails(ud);
         try {
-                    Connection connection = (Connection) DBConnection.con();
+            if (rs.next()) {
+                JOptionPane.showMessageDialog(this, "Username already exists");
+                return;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerRegisterJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
-                    PreparedStatement st = connection.prepareStatement("Select username from user_details where username=?");
+        ud.setFirstName(firstName);
+        ud.setLastName(lastName);
+        ud.setAge(Integer.parseInt(age));
+        ud.setGender(gender);
+        ud.setEmail(email);
+        ud.setPhoneNumber(phoneNum);
+        ud.setAddressLine1(addrLine1);
+        ud.setAddressLine2(addrLine2);
+        ud.setPassword(password);
 
-                    st.setString(1, username);
-                    ResultSet rs = st.executeQuery();
-                    if (rs.next()) {
-                        JOptionPane.showMessageDialog(this, "Username already exists");
-                        return;
-                    } 
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
-                }
-        
-        
-        
-        try {
-                    Connection connection = (Connection) DBConnection.con();
-                    
-                    PreparedStatement selectUsername = connection.prepareStatement("Select username from user_details where username=?");
+        Integer returnedValue = ud.insertUserDetails(ud);
+        if (returnedValue > 0) {
+            dispose();
+            CustomerLoginJFrame login = new CustomerLoginJFrame();
+            login.setVisible(true);
+            JOptionPane.showMessageDialog(this, "Registered Successfully");
+        } else {
+            JOptionPane.showMessageDialog(this, "Wrong Username & Password");
+        }
 
-                    selectUsername.setString(1, username);
-                    ResultSet rs = selectUsername.executeQuery();
-                    if (rs.next()) {
-                        JOptionPane.showMessageDialog(this, "Username already exists");
-                        return;
-                    }
-                    else{
-                    String insertTableSQL = "INSERT INTO user_details(first_name, last_name, age, gender, email, phone_number, address_line_1, address_line_2, username, password) VALUES(?,?,?,?,?,?,?,?,?,?);";
-                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(insertTableSQL);
-                    st.setString(1, firstName);
-                    st.setString(2, lastName);
-                    st.setString(3, age);
-                    st.setString(4, gender);
-                    st.setString(5, email);
-                    st.setString(6, phoneNum);
-                    st.setString(7, addrLine1);
-                    st.setString(8, addrLine2);
-                    st.setString(9, username);
-                    st.setString(10, password);
-                                                          
-                    Integer returnedValue = st.executeUpdate();
-                    if (returnedValue>0) {
-                        dispose();
-                        CustomerLoginJFrame login = new CustomerLoginJFrame();
-                        login.setVisible(true);
-                        JOptionPane.showMessageDialog(this, "Registered Successfully");
-                    } else {
-                        JOptionPane.showMessageDialog(this, "Wrong Username & Password");
-                    }
-                    
-                    }
-                } catch (SQLException sqlException) {
-                    sqlException.printStackTrace();
-                }
-        
+//        try {
+//                    Connection connection = (Connection) DBConnection.con();
+//                    
+//                    PreparedStatement selectUsername = connection.prepareStatement("Select username from user_details where username=?");
+//
+//                    selectUsername.setString(1, username);
+//                    ResultSet rs = selectUsername.executeQuery();
+//                    if (rs.next()) {
+//                        JOptionPane.showMessageDialog(this, "Username already exists");
+//                        return;
+//                    }
+//                    else{
+//                    String insertTableSQL = "INSERT INTO user_details(first_name, last_name, age, gender, email, phone_number, address_line_1, address_line_2, username, password) VALUES(?,?,?,?,?,?,?,?,?,?);";
+//                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(insertTableSQL);
+//                    st.setString(1, firstName);
+//                    st.setString(2, lastName);
+//                    st.setString(3, age);
+//                    st.setString(4, gender);
+//                    st.setString(5, email);
+//                    st.setString(6, phoneNum);
+//                    st.setString(7, addrLine1);
+//                    st.setString(8, addrLine2);
+//                    st.setString(9, username);
+//                    st.setString(10, password);
+//                    Integer returnedValue = ud.insertUserDetails(ud);
+//                    if (returnedValue>0) {
+//                        dispose();
+//                        CustomerLoginJFrame login = new CustomerLoginJFrame();
+//                        login.setVisible(true);
+//                        JOptionPane.showMessageDialog(this, "Registered Successfully");
+//                    } else {
+//                        JOptionPane.showMessageDialog(this, "Wrong Username & Password");
+//                    }
+        // }
+//                } catch (SQLException sqlException) {
+//                    sqlException.printStackTrace();
+//                }
+
     }//GEN-LAST:event_registerButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        
-                        new CustomerLoginJFrame().setVisible(true);
-                        dispose();
+
+        new CustomerLoginJFrame().setVisible(true);
+        dispose();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
         txtCustFirstName.setText(null);
-          txtCustLastName.setText(null);
-   txtCustAge.setText(null);
-  txtCustGender.setText(null);
-  txtCustEmail.setText(null);
-     txtCustPhoneNum.setText(null);
-          txtCustAddrLine1.setText(null);
-          txtCustAddrLine2.setText(null);
-          txtCustUsername.setText(null);
-           txtCustPassword.setText(null);
+        txtCustLastName.setText(null);
+        txtCustAge.setText(null);
+        txtCustGender.setText(null);
+        txtCustEmail.setText(null);
+        txtCustPhoneNum.setText(null);
+        txtCustAddrLine1.setText(null);
+        txtCustAddrLine2.setText(null);
+        txtCustUsername.setText(null);
+        txtCustPassword.setText(null);
     }//GEN-LAST:event_refreshButtonActionPerformed
 
     /**

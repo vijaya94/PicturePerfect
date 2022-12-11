@@ -4,15 +4,58 @@
  */
 package ui.Customer;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Date;
+import javax.swing.table.DefaultTableModel;
+import model.DBConnection;
+
 /**
  *
- * @author Avinash Reddy
+ * @author nihar
  */
 public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form CustomerViewBookingsJFrame
      */
+    String username;
+    int bookingId;
+    Date bookingDate;
+    public CustomerViewBookingsJFrame(String username, int bookingId, Date bookingDate){
+        initComponents();
+        
+        this.username = username;
+        this.bookingId  = bookingId;
+        this.bookingDate = bookingDate;
+        
+        try {
+                    Connection connection = (Connection) DBConnection.con();
+                    
+                    PreparedStatement st = connection.prepareStatement("SELECT booking_id, booking_date, vendor_id, status, username FROM v_vendor_booking_details where where vendor_id is not null");
+
+                    ResultSet rs = st.executeQuery();
+                    
+                    
+                    while(rs.next()){
+                      String vendorId = rs.getString(1);
+                      String vendorName = rs.getString(2);
+                      String address = rs.getString(3);
+                      String email = rs.getString(4);
+                      String phnNumber = rs.getString(5);
+                      
+                      String tblData[] = {vendorId, vendorName, address, email, phnNumber};
+                      DefaultTableModel tblModel = (DefaultTableModel)tblCustomerBookings.getModel();
+                      tblModel.addRow(tblData);
+                    }
+                    
+                } catch (SQLException sqlException) {
+                    sqlException.printStackTrace();
+                }
+       
+    }
     public CustomerViewBookingsJFrame() {
         initComponents();
     }
@@ -42,7 +85,7 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         searchText = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblCustomerBookings = new javax.swing.JTable();
         logoutButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,7 +160,7 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
 
         searchText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblCustomerBookings.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -125,7 +168,7 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
                 "Booking Id", "Event", "Vendor", "Date"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblCustomerBookings);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -303,8 +346,8 @@ public class CustomerViewBookingsJFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTable jTable1;
     private javax.swing.JButton logoutButton;
     private javax.swing.JTextField searchText;
+    private javax.swing.JTable tblCustomerBookings;
     // End of variables declaration//GEN-END:variables
 }
