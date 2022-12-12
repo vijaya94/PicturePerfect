@@ -4,6 +4,16 @@
  */
 package ui.Customer;
 
+<<<<<<< Updated upstream
+=======
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+import model.DBConnection;
+
+>>>>>>> Stashed changes
 /**
  *
  * @author Avinash Reddy
@@ -43,6 +53,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+<<<<<<< Updated upstream
         custFirstNameText = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
@@ -52,15 +63,34 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
         custUsernameText = new javax.swing.JTextField();
+=======
+        txtCustFirstName = new javax.swing.JTextField();
+        txtCustAge = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        txtCustLastName = new javax.swing.JTextField();
+        txtCustGender = new javax.swing.JTextField();
+        txtCustAddrLine2 = new javax.swing.JTextField();
+        txtCustEmail = new javax.swing.JTextField();
+        txtCustAddrLine1 = new javax.swing.JTextField();
+        txtCustUsername = new javax.swing.JTextField();
+>>>>>>> Stashed changes
         jLabel11 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+<<<<<<< Updated upstream
         custPasswordText = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
+=======
+        txtCustPassword = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        txtCustPhoneNum = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        homeButton1 = new javax.swing.JButton();
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,6 +136,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
 
         registerButton.setText("Register");
         registerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+<<<<<<< Updated upstream
         jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 720, 119, 39));
 
         refreshButton.setText("Refresh");
@@ -114,6 +145,31 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
 
         backButton.setText("Back");
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+=======
+        registerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registerButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 720, 119, 39));
+
+        refreshButton.setText("Refresh");
+        refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        refreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                refreshButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, 117, 39));
+
+        backButton.setText("Back");
+        backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
+>>>>>>> Stashed changes
         jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 720, 119, 39));
 
         jPanel4.setBackground(new java.awt.Color(204, 102, 255));
@@ -148,13 +204,20 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Age");
 
+<<<<<<< Updated upstream
         custFirstNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        txtCustFirstName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+
+        txtCustAge.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("Last Name");
 
+<<<<<<< Updated upstream
         jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         jTextField4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
@@ -171,6 +234,24 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         custUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        txtCustLastName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+
+        txtCustGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+
+        txtCustAddrLine2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+        txtCustAddrLine2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCustAddrLine2ActionPerformed(evt);
+            }
+        });
+
+        txtCustEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+
+        txtCustAddrLine1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+
+        txtCustUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("Gender");
@@ -187,17 +268,28 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setText("Address Line 2");
 
+<<<<<<< Updated upstream
         custPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
         custPasswordText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 custPasswordTextActionPerformed(evt);
+=======
+        txtCustPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+        txtCustPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCustPasswordActionPerformed(evt);
+>>>>>>> Stashed changes
             }
         });
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel15.setText("Password");
 
+<<<<<<< Updated upstream
         jTextField10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        txtCustPhoneNum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel16.setText("Phone");
@@ -220,8 +312,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
                                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(custFirstNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                                    .addComponent(txtCustAge, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCustFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> Stashed changes
                                 .addGap(76, 76, 76)
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
@@ -229,8 +326,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                                 .addGap(45, 45, 45))
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
                                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(custUsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                                    .addComponent(txtCustAddrLine1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCustUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> Stashed changes
                                 .addGap(76, 76, 76)
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel7Layout.createSequentialGroup()
@@ -242,6 +344,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
                                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -250,6 +353,16 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                                    .addComponent(txtCustAddrLine2, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCustGender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtCustLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtCustPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(txtCustEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtCustPhoneNum, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> Stashed changes
                 .addGap(76, 76, 76))
         );
         jPanel7Layout.setVerticalGroup(
@@ -258,6 +371,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
+<<<<<<< Updated upstream
                     .addComponent(custFirstNameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -283,6 +397,33 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(custPasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(custUsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+                    .addComponent(txtCustFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9)
+                    .addComponent(txtCustLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCustAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7)
+                    .addComponent(txtCustGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11))
+                .addGap(42, 42, 42)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCustEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(txtCustPhoneNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
+                .addGap(51, 51, 51)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCustAddrLine1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12)
+                    .addComponent(txtCustAddrLine2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCustPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCustUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> Stashed changes
                     .addComponent(jLabel15)
                     .addComponent(jLabel13))
                 .addGap(32, 32, 32))
@@ -293,7 +434,11 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addContainerGap(231, Short.MAX_VALUE)
+=======
+                .addContainerGap(158, Short.MAX_VALUE)
+>>>>>>> Stashed changes
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(212, 212, 212))
         );
@@ -312,7 +457,11 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(62, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
                 .addGap(51, 51, 51))
+=======
+                .addGap(124, 124, 124))
+>>>>>>> Stashed changes
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -324,6 +473,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 490));
 
+<<<<<<< Updated upstream
+=======
+        homeButton1.setText("Home");
+        homeButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        jPanel1.add(homeButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 170, 59, 28));
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -338,6 +494,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< Updated upstream
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
@@ -345,6 +502,184 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     private void custPasswordTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custPasswordTextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_custPasswordTextActionPerformed
+=======
+    private void txtCustAddrLine2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCustAddrLine2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCustAddrLine2ActionPerformed
+
+    private void txtCustPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCustPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCustPasswordActionPerformed
+
+    private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
+        String firstName = txtCustFirstName.getText();
+        String lastName = txtCustLastName.getText();
+        String age = txtCustAge.getText();
+        String gender = txtCustGender.getText();
+        String email = txtCustEmail.getText();
+        String phoneNum = txtCustPhoneNum.getText();
+        String addrLine1 = txtCustAddrLine1.getText();
+        String addrLine2 = txtCustAddrLine2.getText();
+        String username = txtCustUsername.getText();
+        String password = txtCustPassword.getText();
+        
+        
+        if (txtCustFirstName.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "First name is required");
+            return;
+        }
+        
+        if (txtCustLastName.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Last name is required");
+            return;
+        }
+        
+        if (txtCustAge.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Age is required");
+            return;
+        }else if (!txtCustAge.getText().matches("[0-9]*")) {
+            JOptionPane.showMessageDialog(this, "Age must be a number.");
+            return;
+        }else if (Integer.parseInt(txtCustAge.getText())>100) {
+            JOptionPane.showMessageDialog(this, "Age cannot be greater than 100");
+            return;
+        }
+        
+        if (txtCustGender.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "First name is required");
+            return;
+        }
+        
+                
+        if (txtCustEmail.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Email Id is required");
+            return;
+        }
+        try {
+            if (!txtCustEmail.getText().matches("^[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$")) {
+                throw new Exception("Email Id entered is incorrect");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Email Id entered is incorrect");
+            System.out.println(e);
+            return;
+        }
+        
+        if (phoneNum.length() == 0) {
+            JOptionPane.showMessageDialog(this, "Contact Number is required");
+            return;
+        }
+        long cellPhNum = 0;
+        try {
+            if (phoneNum.matches("[0-9]+") && phoneNum.charAt(0) != '0' && phoneNum.length() == 10) {
+                cellPhNum = Long.parseLong(phoneNum);
+            } else {
+                throw new Exception("Contact Number entered is incorrect");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Phone number entered is incorrect ");
+            System.out.println(e);
+            return;
+        }
+        
+        if (txtCustAddrLine1.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Address Line 1 is required");
+            return;
+        }
+        
+        if (txtCustAddrLine2.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Address Line 2 is required");
+            return;
+        }
+        
+        if (txtCustUsername.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Username is required");
+            return;
+        }
+        
+        if (txtCustPassword.getText().length() == 0) {
+            JOptionPane.showMessageDialog(this, "Password is required");
+            return;
+        }
+        
+        try {
+                    Connection connection = (Connection) DBConnection.con();
+
+                    PreparedStatement st = connection.prepareStatement("Select username from user_details where username=?");
+
+                    st.setString(1, username);
+                    ResultSet rs = st.executeQuery();
+                    if (rs.next()) {
+                        JOptionPane.showMessageDialog(this, "Username already exists");
+                        return;
+                    } 
+                } catch (SQLException sqlException) {
+                    sqlException.printStackTrace();
+                }
+        
+        
+        
+        try {
+                    Connection connection = (Connection) DBConnection.con();
+                    
+                    PreparedStatement selectUsername = connection.prepareStatement("Select username from user_details where username=?");
+
+                    selectUsername.setString(1, username);
+                    ResultSet rs = selectUsername.executeQuery();
+                    if (rs.next()) {
+                        JOptionPane.showMessageDialog(this, "Username already exists");
+                        return;
+                    }
+                    else{
+                    String insertTableSQL = "INSERT INTO user_details(first_name, last_name, age, gender, email, phone_number, address_line_1, address_line_2, username, password) VALUES(?,?,?,?,?,?,?,?,?,?);";
+                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(insertTableSQL);
+                    st.setString(1, firstName);
+                    st.setString(2, lastName);
+                    st.setString(3, age);
+                    st.setString(4, gender);
+                    st.setString(5, email);
+                    st.setString(6, phoneNum);
+                    st.setString(7, addrLine1);
+                    st.setString(8, addrLine2);
+                    st.setString(9, username);
+                    st.setString(10, password);
+                                                          
+                    Integer returnedValue = st.executeUpdate();
+                    if (returnedValue>0) {
+                        dispose();
+                        CustomerLoginJFrame login = new CustomerLoginJFrame();
+                        login.setVisible(true);
+                        JOptionPane.showMessageDialog(this, "Registered Successfully");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Wrong Username & Password");
+                    }
+                    
+                    }
+                } catch (SQLException sqlException) {
+                    sqlException.printStackTrace();
+                }
+        
+    }//GEN-LAST:event_registerButtonActionPerformed
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        
+                        new CustomerLoginJFrame().setVisible(true);
+                        dispose();
+    }//GEN-LAST:event_backButtonActionPerformed
+
+    private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
+        txtCustFirstName.setText(null);
+          txtCustLastName.setText(null);
+   txtCustAge.setText(null);
+  txtCustGender.setText(null);
+  txtCustEmail.setText(null);
+     txtCustPhoneNum.setText(null);
+          txtCustAddrLine1.setText(null);
+          txtCustAddrLine2.setText(null);
+          txtCustUsername.setText(null);
+           txtCustPassword.setText(null);
+    }//GEN-LAST:event_refreshButtonActionPerformed
+>>>>>>> Stashed changes
 
     /**
      * @param args the command line arguments
@@ -372,6 +707,10 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CustomerRegisterJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+<<<<<<< Updated upstream
+=======
+        //</editor-fold>
+>>>>>>> Stashed changes
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -383,9 +722,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
+<<<<<<< Updated upstream
     private javax.swing.JTextField custFirstNameText;
     private javax.swing.JTextField custPasswordText;
     private javax.swing.JTextField custUsernameText;
+=======
+    private javax.swing.JButton homeButton1;
+>>>>>>> Stashed changes
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -408,6 +751,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
+<<<<<<< Updated upstream
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
@@ -417,5 +761,19 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton registerButton;
+=======
+    private javax.swing.JButton refreshButton;
+    private javax.swing.JButton registerButton;
+    private javax.swing.JTextField txtCustAddrLine1;
+    private javax.swing.JTextField txtCustAddrLine2;
+    private javax.swing.JTextField txtCustAge;
+    private javax.swing.JTextField txtCustEmail;
+    private javax.swing.JTextField txtCustFirstName;
+    private javax.swing.JTextField txtCustGender;
+    private javax.swing.JTextField txtCustLastName;
+    private javax.swing.JTextField txtCustPassword;
+    private javax.swing.JTextField txtCustPhoneNum;
+    private javax.swing.JTextField txtCustUsername;
+>>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }

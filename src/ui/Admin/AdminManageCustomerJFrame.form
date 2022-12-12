@@ -52,8 +52,74 @@
             </Constraint>
           </Constraints>
 
+<<<<<<< Updated upstream
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
             <Property name="useNullLayout" type="boolean" value="false"/>
+=======
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel3" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jSeparator3" min="-2" pref="250" max="-2" attributes="0"/>
+                          <Component id="jSeparator4" min="-2" pref="250" max="-2" attributes="0"/>
+                          <Component id="jSeparator5" min="-2" pref="250" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                              <Component id="customerManageRequestsButton" min="-2" pref="190" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                              <Component id="customersListButton" min="-2" pref="190" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                              <Component id="customerViewBookingsButton" min="-2" pref="190" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jSeparator7" min="-2" pref="250" max="-2" attributes="0"/>
+                          <Component id="jSeparator2" min="-2" pref="250" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Component id="jSeparator3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Component id="jSeparator4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Component id="jSeparator5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="customerManageRequestsButton" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                      <Component id="customersListButton" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                      <Component id="customerViewBookingsButton" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
+                      <Component id="jSeparator7" min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                      <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+>>>>>>> Stashed changes
           </Layout>
           <SubComponents>
             <Component class="javax.swing.JSeparator" name="jSeparator2">
@@ -62,11 +128,14 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
               </Properties>
+<<<<<<< Updated upstream
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="0" y="782" width="250" height="10"/>
                 </Constraint>
               </Constraints>
+=======
+>>>>>>> Stashed changes
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator3">
               <Properties>
@@ -74,11 +143,14 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
               </Properties>
+<<<<<<< Updated upstream
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="0" y="10" width="250" height="-1"/>
                 </Constraint>
               </Constraints>
+=======
+>>>>>>> Stashed changes
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator4">
               <Properties>
@@ -86,6 +158,7 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
               </Properties>
+<<<<<<< Updated upstream
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="0" y="30" width="250" height="-1"/>
@@ -93,6 +166,10 @@
               </Constraints>
             </Component>
             <Component class="javax.swing.JButton" name="vendorViewBookingsButton">
+=======
+            </Component>
+            <Component class="javax.swing.JButton" name="customerViewBookingsButton">
+>>>>>>> Stashed changes
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="66" red="cc" type="rgb"/>
@@ -103,6 +180,7 @@
                 <Property name="text" type="java.lang.String" value="View Customer Bookings"/>
               </Properties>
               <Events>
+<<<<<<< Updated upstream
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vendorViewBookingsButtonActionPerformed"/>
               </Events>
               <Constraints>
@@ -112,6 +190,12 @@
               </Constraints>
             </Component>
             <Component class="javax.swing.JButton" name="vendorViewDetailsButton">
+=======
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customerViewBookingsButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="customersListButton">
+>>>>>>> Stashed changes
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="66" red="cc" type="rgb"/>
@@ -122,6 +206,7 @@
                 <Property name="text" type="java.lang.String" value="View All Customers"/>
               </Properties>
               <Events>
+<<<<<<< Updated upstream
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vendorViewDetailsButtonActionPerformed"/>
               </Events>
               <Constraints>
@@ -129,6 +214,10 @@
                   <AbsoluteConstraints x="30" y="530" width="190" height="50"/>
                 </Constraint>
               </Constraints>
+=======
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customersListButtonActionPerformed"/>
+              </Events>
+>>>>>>> Stashed changes
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator5">
               <Properties>
@@ -136,11 +225,14 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
               </Properties>
+<<<<<<< Updated upstream
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="0" y="50" width="250" height="-1"/>
                 </Constraint>
               </Constraints>
+=======
+>>>>>>> Stashed changes
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator7">
               <Properties>
@@ -148,6 +240,7 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
               </Properties>
+<<<<<<< Updated upstream
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="0" y="760" width="250" height="10"/>
@@ -168,6 +261,10 @@
               </Constraints>
             </Component>
             <Component class="javax.swing.JButton" name="vendorManageRequestsButton">
+=======
+            </Component>
+            <Component class="javax.swing.JButton" name="customerManageRequestsButton">
+>>>>>>> Stashed changes
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="66" red="cc" type="rgb"/>
@@ -178,6 +275,7 @@
                 <Property name="text" type="java.lang.String" value="Manage Customer Requests"/>
               </Properties>
               <Events>
+<<<<<<< Updated upstream
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vendorManageRequestsButtonActionPerformed"/>
               </Events>
               <Constraints>
@@ -185,6 +283,10 @@
                   <AbsoluteConstraints x="30" y="420" width="190" height="50"/>
                 </Constraint>
               </Constraints>
+=======
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customerManageRequestsButtonActionPerformed"/>
+              </Events>
+>>>>>>> Stashed changes
             </Component>
             <Container class="javax.swing.JPanel" name="jPanel1">
               <Properties>
@@ -192,11 +294,14 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+<<<<<<< Updated upstream
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="20" y="140" width="210" height="190"/>
                 </Constraint>
               </Constraints>
+=======
+>>>>>>> Stashed changes
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -226,6 +331,7 @@
                 </Component>
               </SubComponents>
             </Container>
+<<<<<<< Updated upstream
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="rightJPanel">
@@ -294,32 +400,59 @@
                   <AbsoluteConstraints x="0" y="120" width="1320" height="40"/>
                 </Constraint>
               </Constraints>
+=======
+            <Container class="javax.swing.JPanel" name="jPanel3">
+>>>>>>> Stashed changes
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                       <Component id="jSeparator1" alignment="0" pref="1320" max="32767" attributes="0"/>
+=======
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel10" min="-2" pref="180" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+>>>>>>> Stashed changes
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
+<<<<<<< Updated upstream
                           <EmptySpace min="0" pref="22" max="32767" attributes="0"/>
                           <Component id="jSeparator1" min="-2" pref="18" max="-2" attributes="0"/>
+=======
+                          <EmptySpace pref="26" max="32767" attributes="0"/>
+                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< Updated upstream
                 <Component class="javax.swing.JSeparator" name="jSeparator1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="99" green="0" red="99" type="rgb"/>
                     </Property>
+=======
+                <Component class="javax.swing.JLabel" name="jLabel10">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="18" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;&lt;Admin Name&gt;&gt;"/>
+>>>>>>> Stashed changes
                   </Properties>
                 </Component>
               </SubComponents>
             </Container>
+<<<<<<< Updated upstream
             <Container class="javax.swing.JPanel" name="jPanel5">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -329,34 +462,81 @@
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="0" y="760" width="1320" height="40"/>
+=======
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="rightJPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+              <JSplitPaneConstraints position="right"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel2">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="99" red="cc" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card2"/>
+>>>>>>> Stashed changes
                 </Constraint>
               </Constraints>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                       <Component id="jSeparator6" alignment="0" pref="1320" max="32767" attributes="0"/>
+=======
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="418" max="32767" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="492" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="410" max="-2" attributes="0"/>
+                      </Group>
+>>>>>>> Stashed changes
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="22" max="32767" attributes="0"/>
                           <Component id="jSeparator6" min="-2" pref="18" max="-2" attributes="0"/>
+=======
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="350" max="-2" attributes="0"/>
+                          <EmptySpace pref="246" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< Updated upstream
                 <Component class="javax.swing.JSeparator" name="jSeparator6">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="99" green="0" red="99" type="rgb"/>
                     </Property>
+=======
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/ui/Customer/Logo.jpg"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="jLabel1"/>
+>>>>>>> Stashed changes
                   </Properties>
                 </Component>
               </SubComponents>
             </Container>
+<<<<<<< Updated upstream
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -373,6 +553,8 @@
                 </Constraint>
               </Constraints>
             </Component>
+=======
+>>>>>>> Stashed changes
           </SubComponents>
         </Container>
       </SubComponents>

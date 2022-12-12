@@ -200,9 +200,18 @@
               </Border>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1380" y="710" width="117" height="39"/>
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginButtonActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="1340" y="710" width="117" height="39"/>
+>>>>>>> Stashed changes
             </Constraint>
           </Constraints>
         </Component>
@@ -222,7 +231,11 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="1210" y="710" width="117" height="39"/>
+=======
+              <AbsoluteConstraints x="1150" y="710" width="117" height="39"/>
+>>>>>>> Stashed changes
             </Constraint>
           </Constraints>
         </Component>
@@ -244,7 +257,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                       <EmptySpace pref="77" max="32767" attributes="0"/>
+=======
+                      <EmptySpace pref="118" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
               </Group>
             </DimensionLayout>
@@ -253,7 +270,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                       <EmptySpace pref="37" max="32767" attributes="0"/>
+=======
+                      <EmptySpace pref="35" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
               </Group>
             </DimensionLayout>
@@ -270,7 +291,11 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
+<<<<<<< Updated upstream
                           <EmptySpace pref="477" max="32767" attributes="0"/>
+=======
+                          <EmptySpace pref="424" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                           <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="467" max="-2" attributes="0"/>
                       </Group>
@@ -304,11 +329,19 @@
                                   <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="adminPasswordText" alignment="0" pref="243" max="32767" attributes="0"/>
                                   <Component id="adminUsernameText" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
+=======
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="adminUsernameText" max="32767" attributes="0"/>
+                                  <Component id="jPasswordField1" pref="243" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="24" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -323,9 +356,15 @@
                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                   <Component id="adminPasswordText" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
+=======
+                                  <Component id="jPasswordField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="15" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -358,8 +397,14 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="adminPasswordText">
                       <Properties>
+=======
+                    <Component class="javax.swing.JPasswordField" name="jPasswordField1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+>>>>>>> Stashed changes
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                             <LineBorder thickness="3">
@@ -375,6 +420,26 @@
             </Container>
           </SubComponents>
         </Container>
+<<<<<<< Updated upstream
+=======
+        <Component class="javax.swing.JButton" name="homeButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Home"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="66" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="1400" y="170" width="60" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+>>>>>>> Stashed changes
       </SubComponents>
     </Container>
   </SubComponents>

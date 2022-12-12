@@ -148,9 +148,18 @@
               </Border>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1380" y="720" width="119" height="39"/>
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerButtonActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="1340" y="720" width="119" height="39"/>
+>>>>>>> Stashed changes
             </Constraint>
           </Constraints>
         </Component>
@@ -165,9 +174,18 @@
               </Border>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1200" y="720" width="117" height="39"/>
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshButtonActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="1180" y="720" width="117" height="39"/>
+>>>>>>> Stashed changes
             </Constraint>
           </Constraints>
         </Component>
@@ -182,6 +200,12 @@
               </Border>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backButtonActionPerformed"/>
+          </Events>
+>>>>>>> Stashed changes
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1010" y="720" width="119" height="39"/>
@@ -244,7 +268,11 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="62" max="32767" attributes="0"/>
                       <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+=======
+                      <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
               </Group>
             </DimensionLayout>
@@ -270,7 +298,11 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
+<<<<<<< Updated upstream
                           <EmptySpace pref="231" max="32767" attributes="0"/>
+=======
+                          <EmptySpace pref="158" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
                       </Group>
@@ -312,8 +344,13 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                                                   <Component id="jTextField2" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
                                                   <Component id="custFirstNameText" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+=======
+                                                  <Component id="txtCustAge" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+                                                  <Component id="txtCustFirstName" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                               </Group>
                                               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
@@ -324,8 +361,13 @@
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                                                   <Component id="jTextField7" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
                                                   <Component id="custUsernameText" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+=======
+                                                  <Component id="txtCustAddrLine1" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+                                                  <Component id="txtCustUsername" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                               </Group>
                                               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
@@ -342,6 +384,7 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                                                   <Component id="jTextField5" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
                                                   <Component id="jTextField4" alignment="1" min="-2" pref="264" max="-2" attributes="0"/>
                                               </Group>
@@ -354,6 +397,20 @@
                                       <Component id="jTextField6" min="-2" pref="264" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jTextField10" min="-2" pref="264" max="-2" attributes="0"/>
+=======
+                                                  <Component id="txtCustAddrLine2" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+                                                  <Component id="txtCustGender" alignment="1" min="-2" pref="264" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="txtCustLastName" alignment="1" min="-2" pref="264" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="txtCustPassword" alignment="0" min="-2" pref="264" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtCustEmail" min="-2" pref="264" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="txtCustPhoneNum" min="-2" pref="264" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
@@ -366,6 +423,7 @@
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                   <Component id="custFirstNameText" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -375,26 +433,54 @@
                                   <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                                  <Component id="txtCustFirstName" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCustLastName" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCustAge" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCustGender" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                   <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< Updated upstream
                                   <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                                  <Component id="txtCustEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCustPhoneNum" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                   <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< Updated upstream
                                   <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                                  <Component id="txtCustAddrLine1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCustAddrLine2" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="65" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< Updated upstream
                                   <Component id="custPasswordText" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="custUsernameText" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                                  <Component id="txtCustPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCustUsername" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                                   <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -420,7 +506,11 @@
                         <Property name="text" type="java.lang.String" value="Age"/>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="custFirstNameText">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustFirstName">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -431,7 +521,11 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="jTextField2">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustAge">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -450,7 +544,11 @@
                         <Property name="text" type="java.lang.String" value="Last Name"/>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="jTextField3">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustLastName">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -461,7 +559,11 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="jTextField4">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustGender">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -472,7 +574,11 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="jTextField5">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustAddrLine2">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -483,10 +589,17 @@
                         </Property>
                       </Properties>
                       <Events>
+<<<<<<< Updated upstream
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField5ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTextField6">
+=======
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCustAddrLine2ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtCustEmail">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -497,7 +610,11 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="jTextField7">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustAddrLine1">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -508,7 +625,11 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="custUsernameText">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustUsername">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -559,7 +680,11 @@
                         <Property name="text" type="java.lang.String" value="Address Line 2"/>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="custPasswordText">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustPassword">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -570,7 +695,11 @@
                         </Property>
                       </Properties>
                       <Events>
+<<<<<<< Updated upstream
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custPasswordTextActionPerformed"/>
+=======
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCustPasswordActionPerformed"/>
+>>>>>>> Stashed changes
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel15">
@@ -581,7 +710,11 @@
                         <Property name="text" type="java.lang.String" value="Password"/>
                       </Properties>
                     </Component>
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="jTextField10">
+=======
+                    <Component class="javax.swing.JTextField" name="txtCustPhoneNum">
+>>>>>>> Stashed changes
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -606,6 +739,26 @@
             </Container>
           </SubComponents>
         </Container>
+<<<<<<< Updated upstream
+=======
+        <Component class="javax.swing.JButton" name="homeButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Home"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="66" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="1390" y="170" width="59" height="28"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+>>>>>>> Stashed changes
       </SubComponents>
     </Container>
   </SubComponents>

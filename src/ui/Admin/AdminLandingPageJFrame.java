@@ -4,6 +4,11 @@
  */
 package ui.Admin;
 
+<<<<<<< Updated upstream
+=======
+import ui.Customer.CustomerLandingPageJFrame;
+
+>>>>>>> Stashed changes
 /**
  *
  * @author Avinash Reddy
@@ -37,12 +42,18 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+<<<<<<< Updated upstream
         refreshButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         refreshButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+=======
+        vendorsButton = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        customersButton = new javax.swing.JButton();
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -110,6 +121,7 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+<<<<<<< Updated upstream
         refreshButton1.setText("Vendors");
         refreshButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         refreshButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -120,10 +132,22 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
+=======
+        vendorsButton.setBackground(new java.awt.Color(204, 102, 255));
+        vendorsButton.setText("Vendors");
+        vendorsButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        vendorsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vendorsButtonActionPerformed(evt);
+            }
+        });
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(127, Short.MAX_VALUE)
                 .addComponent(refreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -141,10 +165,24 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(refreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+=======
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(vendorsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(vendorsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(80, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
+<<<<<<< Updated upstream
         refreshButton.setText("Customers");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         refreshButton.addActionListener(new java.awt.event.ActionListener() {
@@ -155,11 +193,23 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
 
         jLabel5.setText("jLabel1");
 
+=======
+        customersButton.setBackground(new java.awt.Color(204, 102, 255));
+        customersButton.setText("Customers");
+        customersButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        customersButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customersButtonActionPerformed(evt);
+            }
+        });
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(126, 126, 126)
                 .addComponent(refreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(125, Short.MAX_VALUE))
@@ -176,6 +226,18 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(refreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+=======
+                .addGap(55, 55, 55)
+                .addComponent(customersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(customersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(80, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -201,9 +263,12 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 480));
 
+<<<<<<< Updated upstream
         jLabel6.setText("Not sure about this design, need to figure it out");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 720, 250, -1));
 
+=======
+>>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -228,6 +293,7 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< Updated upstream
     private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
@@ -235,6 +301,19 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
     private void refreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButton1ActionPerformed
+=======
+    private void customersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customersButtonActionPerformed
+        // TODO add your handling code here:
+        new AdminManageCustomerJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_customersButtonActionPerformed
+
+    private void vendorsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorsButtonActionPerformed
+        // TODO add your handling code here:
+        new AdminManageVendorJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_vendorsButtonActionPerformed
+>>>>>>> Stashed changes
 
     /**
      * @param args the command line arguments
@@ -272,13 +351,20 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< Updated upstream
     private javax.swing.JLabel jLabel1;
+=======
+    private javax.swing.JButton customersButton;
+>>>>>>> Stashed changes
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+<<<<<<< Updated upstream
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+=======
+>>>>>>> Stashed changes
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -287,7 +373,11 @@ public class AdminLandingPageJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+<<<<<<< Updated upstream
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton refreshButton1;
+=======
+    private javax.swing.JButton vendorsButton;
+>>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }
