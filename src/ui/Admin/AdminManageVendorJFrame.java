@@ -5,6 +5,11 @@
 package ui.Admin;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import java.awt.CardLayout;
+
+>>>>>>> Stashed changes
 =======
 import java.awt.CardLayout;
 
@@ -33,6 +38,7 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
 
         jSplitPane1 = new javax.swing.JSplitPane();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         rightJPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -44,6 +50,8 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         leftJPanel = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -52,6 +60,7 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
         vendorViewDetailsButton = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
+<<<<<<< Updated upstream
         jLabel10 = new javax.swing.JLabel();
         vendorManageRequestsButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
@@ -62,11 +71,26 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 >>>>>>> Stashed changes
+=======
+        vendorManageRequestsButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        rightJPanel = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jSplitPane1.setDividerLocation(250);
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         rightJPanel.setBackground(new java.awt.Color(255, 255, 255));
         rightJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -150,6 +174,16 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
 >>>>>>> Stashed changes
 
         vendorViewBookingsButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+        leftJPanel.setBackground(new java.awt.Color(204, 102, 255));
+
+        jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
+
+        jSeparator3.setBackground(new java.awt.Color(153, 0, 153));
+
+        jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
+
+>>>>>>> Stashed changes
         vendorViewBookingsButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         vendorViewBookingsButton.setText("View Vendor Bookings");
         vendorViewBookingsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -158,11 +192,15 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(vendorViewBookingsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, 190, 50));
 =======
 >>>>>>> Stashed changes
 
         vendorViewDetailsButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         vendorViewDetailsButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         vendorViewDetailsButton.setText("View All Vendors");
         vendorViewDetailsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -170,6 +208,7 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
                 vendorViewDetailsButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         leftJPanel.add(vendorViewDetailsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 190, 50));
 
@@ -183,16 +222,21 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
         jLabel10.setText("<<Admin Name>>");
         leftJPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 180, -1));
 =======
+=======
+>>>>>>> Stashed changes
 
         jSeparator5.setBackground(new java.awt.Color(153, 0, 153));
 
         jSeparator7.setBackground(new java.awt.Color(153, 0, 153));
 
+<<<<<<< Updated upstream
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel10.setText("<<Admin Name>>");
 >>>>>>> Stashed changes
 
         vendorManageRequestsButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+>>>>>>> Stashed changes
         vendorManageRequestsButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         vendorManageRequestsButton.setText("Manage Vendor Requests");
         vendorManageRequestsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +245,10 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(vendorManageRequestsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 190, 50));
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -227,11 +274,34 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 210, 190));
 
         jSplitPane1.setLeftComponent(leftJPanel);
 
 =======
+=======
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel10.setText("<<Admin Name>>");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addContainerGap())
+        );
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout leftJPanelLayout = new javax.swing.GroupLayout(leftJPanel);
         leftJPanel.setLayout(leftJPanelLayout);
         leftJPanelLayout.setHorizontalGroup(
@@ -240,9 +310,12 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
             .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(leftJPanelLayout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(40, 40, 40)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(leftJPanelLayout.createSequentialGroup()
+=======
+>>>>>>> Stashed changes
                 .addGap(20, 20, 20)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(leftJPanelLayout.createSequentialGroup()
@@ -256,6 +329,12 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
                 .addComponent(vendorViewBookingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
+=======
+            .addGroup(leftJPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         leftJPanelLayout.setVerticalGroup(
             leftJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -266,11 +345,19 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
                 .addGap(28, 28, 28)
                 .addComponent(jLabel10)
                 .addGap(35, 35, 35)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(90, 90, 90)
+=======
+                .addGap(11, 11, 11)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+>>>>>>> Stashed changes
                 .addComponent(vendorManageRequestsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60)
                 .addComponent(vendorViewDetailsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -286,32 +373,123 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
 
         rightJPanel.setLayout(new java.awt.CardLayout());
 
+<<<<<<< Updated upstream
         jPanel2.setBackground(new java.awt.Color(204, 153, 255));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Customer/Logo.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
+=======
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel4.setBackground(new java.awt.Color(204, 102, 255));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jPanel5.setBackground(new java.awt.Color(204, 102, 255));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1321, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 37, Short.MAX_VALUE)
+        );
+
+        jPanel6.setBackground(new java.awt.Color(204, 102, 255));
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel1.setText("Admin Work Area");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(267, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(243, 243, 243))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(104, 104, 104)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(103, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(418, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(410, 410, 410))
+=======
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(204, 204, 204)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(246, Short.MAX_VALUE))
+=======
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(142, 142, 142)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> Stashed changes
         );
 
         rightJPanel.add(jPanel2, "card2");
 
         jSplitPane1.setRightComponent(rightJPanel);
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -330,33 +508,51 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
     private void vendorViewBookingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorViewBookingsButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         VendorBookingsJPanel shjp = new VendorBookingsJPanel(rightJPanel);
         rightJPanel.add("CustomerBookingsJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_vendorViewBookingsButtonActionPerformed
 
     private void vendorViewDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorViewDetailsButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         VendorListJPanel shjp = new VendorListJPanel(rightJPanel);
         rightJPanel.add("VendorListJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_vendorViewDetailsButtonActionPerformed
 
     private void vendorManageRequestsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorManageRequestsButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         VendorRequestJPanel shjp = new VendorRequestJPanel(rightJPanel);
         rightJPanel.add("VendorRequestJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_vendorManageRequestsButtonActionPerformed
 
@@ -399,6 +595,7 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -412,12 +609,25 @@ public class AdminManageVendorJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
 >>>>>>> Stashed changes
+=======
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+>>>>>>> Stashed changes
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JSeparator jSeparator6;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     private javax.swing.JSeparator jSeparator7;

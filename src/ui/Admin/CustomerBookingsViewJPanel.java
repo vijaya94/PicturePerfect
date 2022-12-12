@@ -5,6 +5,11 @@
 package ui.Admin;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import javax.swing.JPanel;
+
+>>>>>>> Stashed changes
 =======
 import javax.swing.JPanel;
 
@@ -19,10 +24,13 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
      * Creates new form CustomerBookingsViewJPanel
      */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public CustomerBookingsViewJPanel() {
         initComponents();
     }
 =======
+=======
+>>>>>>> Stashed changes
     JPanel rightJPanel;
     public CustomerBookingsViewJPanel() {
         initComponents();
@@ -32,6 +40,9 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         initComponents();
         this.rightJPanel = rightJPanel;
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -44,6 +55,7 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -96,6 +108,8 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1580, 30));
 =======
+=======
+>>>>>>> Stashed changes
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -118,11 +132,15 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         jLabel6.setText("jLabel2");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Manage Customer Bookings");
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 320, -1));
 
@@ -150,6 +168,8 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         updateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 710, 117, 39));
 =======
+=======
+>>>>>>> Stashed changes
 
         logoutButton.setText("Logout");
         logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -186,6 +206,9 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         refreshButton.setText("Refresh");
@@ -196,6 +219,7 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 710, 117, 39));
 
         jPanel2.setBackground(new java.awt.Color(204, 102, 255));
@@ -204,6 +228,8 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
 
         jLabel1.setText("Add table fields here");
 =======
+=======
+>>>>>>> Stashed changes
 
         addButton.setText("Add");
         addButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -251,6 +277,9 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setText("add all the relevant fields");
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -258,6 +287,7 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
                 .addGap(639, 639, 639)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 494, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -267,10 +297,16 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(209, Short.MAX_VALUE))
 >>>>>>> Stashed changes
+=======
+                .addGap(521, 521, 521)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(209, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
                 .addGap(103, 103, 103)
                 .addComponent(jLabel1)
@@ -315,6 +351,8 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         jPanel1.add(backButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 710, 117, 39));
 
 =======
+=======
+>>>>>>> Stashed changes
                 .addGap(137, 137, 137)
                 .addComponent(jLabel1)
                 .addContainerGap(213, Short.MAX_VALUE))
@@ -350,13 +388,20 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
                 .addGap(41, 41, 41))
         );
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 1580, Short.MAX_VALUE)
+=======
+            .addGap(0, 1328, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 1328, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -369,7 +414,11 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 800, Short.MAX_VALUE)
+=======
+            .addGap(0, 802, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 802, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -382,16 +431,23 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_backButtonActionPerformed
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private void newButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newButtonActionPerformed
         // TODO add your handling code here:
@@ -410,6 +466,8 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
 =======
+=======
+>>>>>>> Stashed changes
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addButtonActionPerformed
@@ -426,16 +484,23 @@ public class CustomerBookingsViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JButton newButton;
+=======
+    private javax.swing.JButton logoutButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JButton logoutButton;
 >>>>>>> Stashed changes

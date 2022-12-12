@@ -5,6 +5,11 @@
 package ui.Customer;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import javax.swing.JPanel;
+
+>>>>>>> Stashed changes
 =======
 import javax.swing.JPanel;
 
@@ -19,10 +24,13 @@ public class DecorationJPanel extends javax.swing.JPanel {
      * Creates new form DecorationJPanel
      */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public DecorationJPanel() {
         initComponents();
     }
 =======
+=======
+>>>>>>> Stashed changes
     JPanel rightJPanel;
     public DecorationJPanel() {
         initComponents();
@@ -31,6 +39,9 @@ public class DecorationJPanel extends javax.swing.JPanel {
         initComponents();
         this.rightJPanel = rightJPanel;
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -42,6 +53,7 @@ public class DecorationJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -211,6 +223,8 @@ public class DecorationJPanel extends javax.swing.JPanel {
         jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
 
 =======
+=======
+>>>>>>> Stashed changes
         jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -362,11 +376,15 @@ public class DecorationJPanel extends javax.swing.JPanel {
                 .addGap(41, 41, 41))
         );
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             .addGap(0, 1580, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -374,16 +392,22 @@ public class DecorationJPanel extends javax.swing.JPanel {
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 =======
+=======
+>>>>>>> Stashed changes
             .addGap(0, 1327, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             .addGap(0, 800, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -391,16 +415,22 @@ public class DecorationJPanel extends javax.swing.JPanel {
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 =======
+=======
+>>>>>>> Stashed changes
             .addGap(0, 802, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private void backButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton1ActionPerformed
         // TODO add your handling code here:
@@ -425,6 +455,8 @@ public class DecorationJPanel extends javax.swing.JPanel {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JButton updateButton1;
 =======
+=======
+>>>>>>> Stashed changes
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_backButtonActionPerformed
@@ -442,6 +474,9 @@ public class DecorationJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton logoutButton;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }

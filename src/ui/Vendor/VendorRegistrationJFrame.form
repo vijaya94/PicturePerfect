@@ -151,7 +151,11 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="1380" y="720" width="119" height="39"/>
+=======
+              <AbsoluteConstraints x="1350" y="720" width="119" height="39"/>
+>>>>>>> Stashed changes
 =======
               <AbsoluteConstraints x="1350" y="720" width="119" height="39"/>
 >>>>>>> Stashed changes
@@ -172,7 +176,11 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="1200" y="720" width="117" height="39"/>
+=======
+              <AbsoluteConstraints x="1180" y="720" width="117" height="39"/>
+>>>>>>> Stashed changes
 =======
               <AbsoluteConstraints x="1180" y="720" width="117" height="39"/>
 >>>>>>> Stashed changes
@@ -253,7 +261,11 @@
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       <EmptySpace pref="36" max="32767" attributes="0"/>
+=======
+                      <EmptySpace pref="115" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                       <EmptySpace pref="115" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -285,7 +297,11 @@
                           <EmptySpace min="-2" pref="221" max="-2" attributes="0"/>
                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                           <EmptySpace pref="249" max="32767" attributes="0"/>
+=======
+                          <EmptySpace pref="170" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                           <EmptySpace pref="170" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -320,9 +336,15 @@
                                   <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel8" alignment="0" max="32767" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                   <Component id="jLabel12" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel13" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel17" alignment="0" pref="109" max="32767" attributes="0"/>
+=======
+                                  <Component id="jLabel12" alignment="0" pref="109" max="32767" attributes="0"/>
+                                  <Component id="jLabel13" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel17" alignment="0" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                                   <Component id="jLabel12" alignment="0" pref="109" max="32767" attributes="0"/>
                                   <Component id="jLabel13" alignment="0" max="32767" attributes="0"/>
@@ -692,7 +714,10 @@
           </SubComponents>
         </Container>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Home"/>
@@ -710,6 +735,9 @@
             </Constraint>
           </Constraints>
         </Component>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </SubComponents>
     </Container>

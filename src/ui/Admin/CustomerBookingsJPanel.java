@@ -5,6 +5,12 @@
 package ui.Admin;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import java.awt.CardLayout;
+import javax.swing.JPanel;
+
+>>>>>>> Stashed changes
 =======
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -20,6 +26,10 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
      * Creates new form CustomerBookingsJPanel
      */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    JPanel rightJPanel;
+>>>>>>> Stashed changes
 =======
     JPanel rightJPanel;
 >>>>>>> Stashed changes
@@ -28,11 +38,17 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     public CustomerBookingsJPanel(JPanel rightJPanel) {
         initComponents();
         this.rightJPanel = rightJPanel;
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     /**
      * This method is called from within the constructor to initialize the form.
@@ -44,6 +60,7 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -82,6 +99,8 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
 
         jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
 =======
+=======
+>>>>>>> Stashed changes
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -113,12 +132,16 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
 
         logoutButton.setText("Logout");
         logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 1580, Short.MAX_VALUE)
         );
@@ -161,6 +184,8 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
         deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(deleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 710, 117, 39));
 =======
+=======
+>>>>>>> Stashed changes
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(545, 545, 545)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -181,6 +206,9 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
         );
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         backButton.setText("Back");
@@ -190,6 +218,7 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 710, 117, 39));
 
@@ -227,6 +256,8 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
 
         searchText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 =======
+=======
+>>>>>>> Stashed changes
 
         deleteButton.setText("Delete");
         deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -251,12 +282,16 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
                 addButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(41, Short.MAX_VALUE)
@@ -281,6 +316,8 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(56, Short.MAX_VALUE))
 =======
+=======
+>>>>>>> Stashed changes
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(700, Short.MAX_VALUE)
                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -344,6 +381,9 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
                     .addGap(87, 87, 87)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(87, Short.MAX_VALUE)))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         );
 
@@ -353,10 +393,13 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addGap(20, 20, 20)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(28, Short.MAX_VALUE))
 =======
+=======
+>>>>>>> Stashed changes
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 657, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
@@ -366,11 +409,15 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
                 .addGap(64, 64, 64)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(71, Short.MAX_VALUE))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
                 .addGap(32, 32, 32)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -388,6 +435,8 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
         });
         jPanel1.add(viewButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 710, 117, 39));
 =======
+=======
+>>>>>>> Stashed changes
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -420,6 +469,9 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -427,7 +479,11 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 1580, Short.MAX_VALUE)
+=======
+            .addGap(0, 1327, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 1327, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -440,7 +496,11 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 800, Short.MAX_VALUE)
+=======
+            .addGap(0, 802, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 802, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -457,6 +517,7 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_backButtonActionPerformed
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_viewButtonActionPerformed
@@ -472,6 +533,8 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
 =======
+=======
+>>>>>>> Stashed changes
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_deleteButtonActionPerformed
@@ -500,6 +563,9 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -508,9 +574,14 @@ public class CustomerBookingsJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextField searchText;
+=======
+    private javax.swing.JTable jTable1;
+    private javax.swing.JButton logoutButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JTable jTable1;
     private javax.swing.JButton logoutButton;

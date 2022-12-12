@@ -7,13 +7,17 @@ package ui;
 
 import ui.Admin.AdminLoginJFrame;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import ui.Customer.CustomerViewDetailsJFrame;
 
 =======
+=======
+>>>>>>> Stashed changes
 import ui.Customer.CustomerLoginJFrame;
 import ui.Customer.CustomerViewDetailsJFrame;
 import ui.Vendor.VendorLoginJFrame;
 >>>>>>> Stashed changes
+
 
 
 /**
@@ -64,7 +68,10 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 
         leftJPanel.setBackground(new java.awt.Color(204, 102, 255));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -73,6 +80,9 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/User.png"))); // NOI18N
         jLabel5.setText("jLabel5");
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -91,6 +101,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+<<<<<<< Updated upstream
         leftJPanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, 90));
 
         jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
@@ -128,6 +139,14 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 >>>>>>> Stashed changes
 
         customerButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+        jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
+
+        jSeparator3.setBackground(new java.awt.Color(153, 0, 153));
+
+        jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
+
+>>>>>>> Stashed changes
         customerButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         customerButton.setText("Customer");
         customerButton.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +156,10 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         });
         leftJPanel.add(customerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 170, 50));
 
+<<<<<<< Updated upstream
         adminButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+>>>>>>> Stashed changes
         adminButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         adminButton.setText("Admininistrator");
         adminButton.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +169,10 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
         });
         leftJPanel.add(adminButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 170, 50));
 
+<<<<<<< Updated upstream
         vendorButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+>>>>>>> Stashed changes
         vendorButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         vendorButton.setText("Vendor");
         vendorButton.addActionListener(new java.awt.event.ActionListener() {
@@ -183,6 +208,13 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 
         jSeparator7.setBackground(new java.awt.Color(153, 0, 153));
 
+<<<<<<< Updated upstream
+=======
+        jSeparator5.setBackground(new java.awt.Color(153, 0, 153));
+
+        jSeparator7.setBackground(new java.awt.Color(153, 0, 153));
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout leftJPanelLayout = new javax.swing.GroupLayout(leftJPanel);
         leftJPanel.setLayout(leftJPanelLayout);
         leftJPanelLayout.setHorizontalGroup(
@@ -236,6 +268,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
         jLabel2.setText("jLabel1");
+<<<<<<< Updated upstream
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
         jLabel3.setText("jLabel1");
@@ -289,6 +322,49 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 <<<<<<< Updated upstream
         rightJPanel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 760, 1320, 40));
 =======
+=======
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Header.png"))); // NOI18N
+        jLabel3.setText("jLabel1");
+
+        jPanel3.setBackground(new java.awt.Color(204, 102, 255));
+
+        jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 1320, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 22, Short.MAX_VALUE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Logo.jpg"))); // NOI18N
+        jLabel4.setText("jLabel1");
+
+        jPanel5.setBackground(new java.awt.Color(204, 102, 255));
+
+        jSeparator6.setBackground(new java.awt.Color(153, 0, 153));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator6, javax.swing.GroupLayout.DEFAULT_SIZE, 1320, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(0, 22, Short.MAX_VALUE)
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout rightJPanelLayout = new javax.swing.GroupLayout(rightJPanel);
         rightJPanel.setLayout(rightJPanelLayout);
         rightJPanelLayout.setHorizontalGroup(
@@ -319,6 +395,9 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 .addGap(80, 80, 80)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -329,6 +408,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                 .addComponent(leftJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addComponent(rightJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1321, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -336,6 +416,8 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
             .addComponent(leftJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(rightJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 =======
+=======
+>>>>>>> Stashed changes
                 .addComponent(rightJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -345,6 +427,9 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
                     .addComponent(leftJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(rightJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(1, 1, 1))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         );
 
@@ -352,6 +437,7 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void customerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerButtonActionPerformed
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         // TODO add your handling code here:
     }//GEN-LAST:event_customerButtonActionPerformed
@@ -362,6 +448,20 @@ public class HomeScreenJFrame extends javax.swing.JFrame {
 
     private void vendorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorButtonActionPerformed
         // TODO add your handling code here:
+=======
+        new CustomerLoginJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_customerButtonActionPerformed
+
+    private void adminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminButtonActionPerformed
+        new AdminLoginJFrame().setVisible(true);
+            dispose();
+    }//GEN-LAST:event_adminButtonActionPerformed
+
+    private void vendorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendorButtonActionPerformed
+        new VendorLoginJFrame().setVisible(true);
+            dispose();
+>>>>>>> Stashed changes
 =======
         new CustomerLoginJFrame().setVisible(true);
             dispose();

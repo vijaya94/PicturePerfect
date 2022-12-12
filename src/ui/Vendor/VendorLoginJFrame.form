@@ -199,7 +199,11 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="1310" y="730" width="-1" height="-1"/>
+=======
+              <AbsoluteConstraints x="1270" y="730" width="-1" height="-1"/>
+>>>>>>> Stashed changes
 =======
               <AbsoluteConstraints x="1270" y="730" width="-1" height="-1"/>
 >>>>>>> Stashed changes
@@ -218,16 +222,22 @@
             </Property>
           </Properties>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1380" y="710" width="119" height="39"/>
 =======
+=======
+>>>>>>> Stashed changes
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerButtonActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1350" y="710" width="119" height="39"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             </Constraint>
           </Constraints>
@@ -244,16 +254,22 @@
             </Property>
           </Properties>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1150" y="710" width="117" height="39"/>
 =======
+=======
+>>>>>>> Stashed changes
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginButtonActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1120" y="710" width="117" height="39"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             </Constraint>
           </Constraints>
@@ -275,7 +291,11 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="980" y="710" width="117" height="39"/>
+=======
+              <AbsoluteConstraints x="950" y="710" width="117" height="39"/>
+>>>>>>> Stashed changes
 =======
               <AbsoluteConstraints x="950" y="710" width="117" height="39"/>
 >>>>>>> Stashed changes
@@ -301,7 +321,11 @@
                       <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       <EmptySpace pref="77" max="32767" attributes="0"/>
+=======
+                      <EmptySpace pref="119" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                       <EmptySpace pref="119" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -314,7 +338,11 @@
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       <EmptySpace pref="37" max="32767" attributes="0"/>
+=======
+                      <EmptySpace pref="35" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                       <EmptySpace pref="35" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -335,7 +363,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                           <EmptySpace pref="477" max="32767" attributes="0"/>
+=======
+                          <EmptySpace pref="423" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                           <EmptySpace pref="423" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -373,17 +405,23 @@
                               </Group>
                               <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="vendorPasswordText" alignment="0" pref="243" max="32767" attributes="0"/>
                                   <Component id="vendorUsernameText" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> Stashed changes
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="vendorUsernameText" max="32767" attributes="0"/>
                                   <Component id="jPasswordField1" pref="243" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="24" max="32767" attributes="0"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                           </Group>
                       </Group>
@@ -400,9 +438,15 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                   <Component id="vendorPasswordText" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
+=======
+                                  <Component id="jPasswordField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="15" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                                   <Component id="jPasswordField1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -441,8 +485,14 @@
                       </Properties>
                     </Component>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     <Component class="javax.swing.JTextField" name="vendorPasswordText">
                       <Properties>
+=======
+                    <Component class="javax.swing.JPasswordField" name="jPasswordField1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+>>>>>>> Stashed changes
 =======
                     <Component class="javax.swing.JPasswordField" name="jPasswordField1">
                       <Properties>
@@ -464,7 +514,10 @@
           </SubComponents>
         </Container>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         <Component class="javax.swing.JButton" name="homeButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Home"/>
@@ -482,6 +535,9 @@
             </Constraint>
           </Constraints>
         </Component>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </SubComponents>
     </Container>

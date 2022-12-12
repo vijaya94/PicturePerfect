@@ -5,6 +5,11 @@
 package ui.Customer;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import java.awt.CardLayout;
+
+>>>>>>> Stashed changes
 =======
 import java.awt.CardLayout;
 
@@ -49,6 +54,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         rentalTransportationButton = new javax.swing.JButton();
         rightJPanel = new javax.swing.JPanel();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -61,12 +67,21 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 >>>>>>> Stashed changes
+=======
+        jPanel2 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jSplitPane.setDividerLocation(250);
 
         leftJPanel.setBackground(new java.awt.Color(204, 102, 255));
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         leftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -79,15 +94,21 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
         leftJPanel.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 250, -1));
 =======
+=======
+>>>>>>> Stashed changes
 
         jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
 
         jSeparator3.setBackground(new java.awt.Color(153, 0, 153));
 
         jSeparator4.setBackground(new java.awt.Color(153, 0, 153));
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
         venueButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         venueButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         venueButton.setText("Venue");
         venueButton.addActionListener(new java.awt.event.ActionListener() {
@@ -96,11 +117,15 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(venueButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 690, 170, 50));
 =======
 >>>>>>> Stashed changes
 
         musicButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         musicButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         musicButton.setText("Music");
         musicButton.addActionListener(new java.awt.event.ActionListener() {
@@ -109,11 +134,15 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(musicButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 170, 50));
 =======
 >>>>>>> Stashed changes
 
         kidsEntertainmentButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         kidsEntertainmentButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         kidsEntertainmentButton.setText("Kids Entertainment");
         kidsEntertainmentButton.addActionListener(new java.awt.event.ActionListener() {
@@ -121,6 +150,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
                 kidsEntertainmentButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         leftJPanel.add(kidsEntertainmentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 170, 50));
 
@@ -134,6 +164,8 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         jLabel10.setText("Services");
         leftJPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 70, -1));
 =======
+=======
+>>>>>>> Stashed changes
 
         jSeparator5.setBackground(new java.awt.Color(153, 0, 153));
 
@@ -141,9 +173,13 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel10.setText("Services");
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
         couplePackageButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         couplePackageButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         couplePackageButton.setText("Couple Package");
         couplePackageButton.addActionListener(new java.awt.event.ActionListener() {
@@ -152,11 +188,15 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(couplePackageButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 170, 50));
 =======
 >>>>>>> Stashed changes
 
         cateringButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         cateringButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cateringButton.setText("Catering");
         cateringButton.addActionListener(new java.awt.event.ActionListener() {
@@ -165,11 +205,15 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(cateringButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 170, 50));
 =======
 >>>>>>> Stashed changes
 
         decorationButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         decorationButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         decorationButton.setText("Decoration");
         decorationButton.addActionListener(new java.awt.event.ActionListener() {
@@ -178,11 +222,15 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(decorationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 170, 50));
 =======
 >>>>>>> Stashed changes
 
         giftShopButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         giftShopButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         giftShopButton.setText("Gift Shop");
         giftShopButton.addActionListener(new java.awt.event.ActionListener() {
@@ -191,11 +239,15 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         leftJPanel.add(giftShopButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 170, 50));
 =======
 >>>>>>> Stashed changes
 
         rentalTransportationButton.setBackground(new java.awt.Color(204, 102, 255));
+=======
+
+>>>>>>> Stashed changes
         rentalTransportationButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         rentalTransportationButton.setText("Retal Transportation");
         rentalTransportationButton.addActionListener(new java.awt.event.ActionListener() {
@@ -203,6 +255,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
                 rentalTransportationButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         leftJPanel.add(rentalTransportationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 610, 170, 50));
 
@@ -266,6 +319,8 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
         jLabel12.setText("Select Any Offered Service ");
         rightJPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 310, -1));
 =======
+=======
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout leftJPanelLayout = new javax.swing.GroupLayout(leftJPanel);
         leftJPanel.setLayout(leftJPanelLayout);
@@ -339,6 +394,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
 
         jSplitPane.setLeftComponent(leftJPanel);
 
+<<<<<<< Updated upstream
         rightJPanel.setBackground(new java.awt.Color(204, 102, 255));
         rightJPanel.setLayout(new java.awt.CardLayout());
 
@@ -366,6 +422,101 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
 
         rightJPanel.add(jPanel1, "card2");
 >>>>>>> Stashed changes
+=======
+        rightJPanel.setLayout(new java.awt.CardLayout());
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel4.setBackground(new java.awt.Color(204, 102, 255));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jPanel5.setBackground(new java.awt.Color(204, 102, 255));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1316, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 37, Short.MAX_VALUE)
+        );
+
+        jPanel6.setBackground(new java.awt.Color(204, 102, 255));
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel1.setText("Services Offered to Customers");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(jLabel1)
+                .addContainerGap(127, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(64, 64, 64)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(104, 104, 104)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(103, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(142, 142, 142)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        rightJPanel.add(jPanel2, "card2");
+>>>>>>> Stashed changes
 
         jSplitPane.setRightComponent(rightJPanel);
 
@@ -386,89 +537,137 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
     private void venueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_venueButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         VenueJPanel shjp = new VenueJPanel(rightJPanel);
         rightJPanel.add("VenueJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_venueButtonActionPerformed
 
     private void musicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_musicButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         MusicJPanel shjp = new MusicJPanel(rightJPanel);
         rightJPanel.add("MusicJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_musicButtonActionPerformed
 
     private void kidsEntertainmentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kidsEntertainmentButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         KidsEntertainmentJPanel shjp = new KidsEntertainmentJPanel(rightJPanel);
         rightJPanel.add("KidsEntertainmentJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_kidsEntertainmentButtonActionPerformed
 
     private void couplePackageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_couplePackageButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         CouplePackageJPanel shjp = new CouplePackageJPanel(rightJPanel);
         rightJPanel.add("CouplePackageJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_couplePackageButtonActionPerformed
 
     private void cateringButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cateringButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         CateringJPanel shjp = new CateringJPanel(rightJPanel);
         rightJPanel.add("CateringJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
                                   
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_cateringButtonActionPerformed
 
     private void decorationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_decorationButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         DecorationJPanel shjp = new DecorationJPanel(rightJPanel);
         rightJPanel.add("DecorationJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_decorationButtonActionPerformed
 
     private void giftShopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_giftShopButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         GiftShopJPanel shjp = new GiftShopJPanel(rightJPanel);
         rightJPanel.add("GiftShopJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_giftShopButtonActionPerformed
 
     private void rentalTransportationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentalTransportationButtonActionPerformed
         // TODO add your handling code here:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         RentalTransportationJPanel shjp = new RentalTransportationJPanel(rightJPanel);
         rightJPanel.add("RentalTransportationJPanel",shjp);
         CardLayout layout = (CardLayout)rightJPanel.getLayout();
         layout.next(rightJPanel);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }//GEN-LAST:event_rentalTransportationButtonActionPerformed
 
@@ -515,6 +714,7 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -524,12 +724,22 @@ public class CustomerBookEventJFrame extends javax.swing.JFrame {
 =======
     private javax.swing.JPanel jPanel1;
 >>>>>>> Stashed changes
+=======
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+>>>>>>> Stashed changes
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JSeparator jSeparator6;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     private javax.swing.JSeparator jSeparator7;

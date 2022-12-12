@@ -4,6 +4,11 @@
  */
 package ui.Vendor;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+import ui.Customer.CustomerLandingPageJFrame;
+>>>>>>> Stashed changes
 =======
 
 import ui.Customer.CustomerLandingPageJFrame;
@@ -51,7 +56,12 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         vendorUsernameText = new javax.swing.JTextField();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         vendorPasswordText = new javax.swing.JTextField();
+=======
+        jPasswordField1 = new javax.swing.JPasswordField();
+        homeButton = new javax.swing.JButton();
+>>>>>>> Stashed changes
 =======
         jPasswordField1 = new javax.swing.JPasswordField();
         homeButton = new javax.swing.JButton();
@@ -75,6 +85,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 590, 120));
 
         jPanel3.setBackground(new java.awt.Color(204, 102, 255));
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
         jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
@@ -133,6 +144,8 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 710, 117, 39));
 
 =======
+=======
+>>>>>>> Stashed changes
 
         jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
 
@@ -199,6 +212,9 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 710, 117, 39));
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         refreshButton.setText("Refresh");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -208,7 +224,11 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 710, 117, 39));
+=======
+        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 710, 117, 39));
+>>>>>>> Stashed changes
 =======
         jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 710, 117, 39));
 >>>>>>> Stashed changes
@@ -228,7 +248,12 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         vendorUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         vendorPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 =======
         jPasswordField1.setText("jPasswordField1");
         jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
@@ -245,15 +270,21 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(100, 100, 100)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(vendorPasswordText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
                     .addComponent(vendorUsernameText))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 =======
+=======
+>>>>>>> Stashed changes
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(vendorUsernameText)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE))
                 .addContainerGap(24, Short.MAX_VALUE))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         );
         jPanel6Layout.setVerticalGroup(
@@ -267,8 +298,13 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     .addComponent(vendorPasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -276,6 +312,7 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addContainerGap(477, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(467, 467, 467))
@@ -298,6 +335,8 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+=======
+>>>>>>> Stashed changes
                 .addContainerGap(423, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(467, 467, 467))
@@ -310,6 +349,9 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 .addContainerGap(150, Short.MAX_VALUE))
         );
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -319,7 +361,11 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 .addGap(64, 64, 64)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(77, Short.MAX_VALUE))
+=======
+                .addContainerGap(119, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(119, Short.MAX_VALUE))
 >>>>>>> Stashed changes
@@ -330,11 +376,14 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 480));
 =======
+=======
+>>>>>>> Stashed changes
                 .addContainerGap(35, Short.MAX_VALUE))
         );
 
@@ -343,6 +392,9 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         homeButton.setText("Home");
         homeButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 170, 70, 30));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -371,9 +423,12 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
     private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
 =======
+=======
+>>>>>>> Stashed changes
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
 
@@ -388,6 +443,9 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
         new VendorRegistrationJFrame().setVisible(true);
             dispose();
     }//GEN-LAST:event_registerButtonActionPerformed
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -427,6 +485,10 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JButton homeButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JButton homeButton;
 >>>>>>> Stashed changes
@@ -444,6 +506,10 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JPasswordField jPasswordField1;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JPasswordField jPasswordField1;
 >>>>>>> Stashed changes
@@ -453,7 +519,10 @@ public class VendorLoginJFrame extends javax.swing.JFrame {
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton registerButton;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JTextField vendorPasswordText;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     private javax.swing.JTextField vendorUsernameText;

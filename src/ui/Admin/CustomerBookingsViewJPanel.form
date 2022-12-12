@@ -17,7 +17,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <EmptySpace min="0" pref="1580" max="32767" attributes="0"/>
+=======
+          <EmptySpace min="0" pref="1328" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
           <EmptySpace min="0" pref="1328" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -33,7 +37,11 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <EmptySpace min="0" pref="800" max="32767" attributes="0"/>
+=======
+          <EmptySpace min="0" pref="802" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
           <EmptySpace min="0" pref="802" max="32767" attributes="0"/>
 >>>>>>> Stashed changes
@@ -51,6 +59,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
@@ -75,6 +84,8 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
 =======
+=======
+>>>>>>> Stashed changes
           <Color blue="ff" green="66" red="cc" type="rgb"/>
         </Property>
       </Properties>
@@ -116,6 +127,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel5">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -123,6 +137,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -135,12 +150,17 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
 >>>>>>> Stashed changes
+=======
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+>>>>>>> Stashed changes
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/ui/Vendor/Header.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -160,6 +180,8 @@
             </Constraint>
           </Constraints>
 =======
+=======
+>>>>>>> Stashed changes
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
@@ -167,14 +189,20 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   <Component id="jSeparator1" alignment="0" pref="1580" max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> Stashed changes
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="545" max="-2" attributes="0"/>
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -182,17 +210,23 @@
                       <Component id="logoutButton" min="-2" pref="68" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> Stashed changes
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -202,6 +236,9 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="logoutButton" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace pref="18" max="32767" attributes="0"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                   </Group>
               </Group>
@@ -209,11 +246,14 @@
           </Layout>
           <SubComponents>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <Component class="javax.swing.JSeparator" name="jSeparator1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="0" red="99" type="rgb"/>
 =======
+=======
+>>>>>>> Stashed changes
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -234,12 +274,16 @@
                       <Color PropertyName="color" blue="ff" green="66" red="cc" type="rgb"/>
                     </LineBorder>
                   </Border>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                 </Property>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
@@ -269,20 +313,28 @@
             </Constraint>
           </Constraints>
 =======
+=======
+>>>>>>> Stashed changes
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   <Component id="jSeparator2" alignment="0" pref="1580" max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> Stashed changes
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="backButton" min="-2" pref="117" max="-2" attributes="0"/>
@@ -294,17 +346,23 @@
                       <Component id="updateButton" min="-2" pref="117" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> Stashed changes
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="15" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -314,12 +372,16 @@
                           <Component id="updateButton" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <Component class="javax.swing.JSeparator" name="jSeparator2">
               <Properties>
@@ -379,6 +441,8 @@
             </Constraint>
           </Constraints>
 =======
+=======
+>>>>>>> Stashed changes
             <Component class="javax.swing.JButton" name="backButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Back"/>
@@ -447,6 +511,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
           <Layout>
@@ -454,9 +521,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="27" max="32767" attributes="0"/>
+=======
+                      <EmptySpace min="-2" pref="521" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="463" max="-2" attributes="0"/>
+                      <EmptySpace pref="209" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                       <EmptySpace min="-2" pref="521" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="463" max="-2" attributes="0"/>
@@ -469,9 +542,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="37" max="32767" attributes="0"/>
+=======
+                      <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="213" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 =======
                       <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -482,6 +561,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <Container class="javax.swing.JPanel" name="jPanel4">
               <Properties>
@@ -561,6 +641,8 @@
           </Constraints>
         </Component>
 =======
+=======
+>>>>>>> Stashed changes
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="add all the relevant fields"/>
@@ -568,6 +650,9 @@
             </Component>
           </SubComponents>
         </Container>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </SubComponents>
     </Container>

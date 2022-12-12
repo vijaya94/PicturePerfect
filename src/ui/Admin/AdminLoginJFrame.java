@@ -46,7 +46,12 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         adminUsernameText = new javax.swing.JTextField();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         adminPasswordText = new javax.swing.JTextField();
+=======
+        jPasswordField1 = new javax.swing.JPasswordField();
+        homeButton = new javax.swing.JButton();
+>>>>>>> Stashed changes
 =======
         jPasswordField1 = new javax.swing.JPasswordField();
         homeButton = new javax.swing.JButton();
@@ -57,6 +62,9 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -89,6 +97,7 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1580, 30));
+<<<<<<< Updated upstream
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
@@ -187,6 +196,51 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 710, 117, 39));
 >>>>>>> Stashed changes
+=======
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 0, 255));
+        jLabel10.setText("Welcome Admin");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 200, -1));
+
+        jPanel5.setBackground(new java.awt.Color(204, 102, 255));
+
+        jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 1580, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 770, 1580, 30));
+
+        loginButton.setText("Login");
+        loginButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 710, 117, 39));
+
+        refreshButton.setText("Refresh");
+        refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        refreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                refreshButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 710, 117, 39));
+>>>>>>> Stashed changes
 
         jPanel4.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -203,7 +257,12 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         adminUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         adminPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 =======
         jPasswordField1.setText("jPasswordField1");
         jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
@@ -220,15 +279,21 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(100, 100, 100)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(adminPasswordText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
                     .addComponent(adminUsernameText))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 =======
+=======
+>>>>>>> Stashed changes
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(adminUsernameText)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE))
                 .addContainerGap(24, Short.MAX_VALUE))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         );
         jPanel6Layout.setVerticalGroup(
@@ -242,8 +307,13 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     .addComponent(adminPasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(15, Short.MAX_VALUE))
@@ -256,7 +326,11 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(477, Short.MAX_VALUE)
+=======
+                .addContainerGap(424, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(424, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -279,7 +353,11 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
                 .addGap(64, 64, 64)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(77, Short.MAX_VALUE))
+=======
+                .addContainerGap(118, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(118, Short.MAX_VALUE))
 >>>>>>> Stashed changes
@@ -290,11 +368,14 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 480));
 =======
+=======
+>>>>>>> Stashed changes
                 .addContainerGap(35, Short.MAX_VALUE))
         );
 
@@ -303,6 +384,9 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         homeButton.setText("Home");
         homeButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 170, 60, 30));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -331,9 +415,12 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
 
     private void refreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshButtonActionPerformed
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
 =======
+=======
+>>>>>>> Stashed changes
         // TODO add your handling code here:
     }//GEN-LAST:event_refreshButtonActionPerformed
 
@@ -342,6 +429,9 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
         new AdminLandingPageJFrame().setVisible(true);
             dispose();
     }//GEN-LAST:event_loginButtonActionPerformed
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -381,8 +471,13 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JTextField adminPasswordText;
     private javax.swing.JTextField adminUsernameText;
+=======
+    private javax.swing.JTextField adminUsernameText;
+    private javax.swing.JButton homeButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JTextField adminUsernameText;
     private javax.swing.JButton homeButton;
@@ -400,6 +495,10 @@ public class AdminLoginJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JPasswordField jPasswordField1;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JPasswordField jPasswordField1;
 >>>>>>> Stashed changes

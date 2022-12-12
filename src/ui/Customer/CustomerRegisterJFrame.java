@@ -5,7 +5,10 @@
 package ui.Customer;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,6 +16,9 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import model.DBConnection;
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /**
  *
@@ -54,6 +60,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         custFirstNameText = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
@@ -64,6 +71,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         custUsernameText = new javax.swing.JTextField();
 =======
+=======
+>>>>>>> Stashed changes
         txtCustFirstName = new javax.swing.JTextField();
         txtCustAge = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
@@ -73,6 +82,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         txtCustEmail = new javax.swing.JTextField();
         txtCustAddrLine1 = new javax.swing.JTextField();
         txtCustUsername = new javax.swing.JTextField();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         jLabel11 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -80,16 +92,22 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         custPasswordText = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
 =======
+=======
+>>>>>>> Stashed changes
         txtCustPassword = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         txtCustPhoneNum = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         homeButton1 = new javax.swing.JButton();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -137,6 +155,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         registerButton.setText("Register");
         registerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 720, 119, 39));
 
         refreshButton.setText("Refresh");
@@ -146,6 +165,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         backButton.setText("Back");
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
 =======
+=======
+>>>>>>> Stashed changes
         registerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 registerButtonActionPerformed(evt);
@@ -169,6 +190,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 backButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 720, 119, 39));
 
@@ -205,9 +229,15 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel7.setText("Age");
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         custFirstNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        txtCustFirstName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+
+        txtCustAge.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 =======
         txtCustFirstName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
@@ -217,6 +247,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("Last Name");
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
@@ -235,6 +266,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
 
         custUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 =======
+=======
+>>>>>>> Stashed changes
         txtCustLastName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         txtCustGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
@@ -251,6 +284,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         txtCustAddrLine1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
         txtCustUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -269,15 +305,21 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel14.setText("Address Line 2");
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         custPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
         custPasswordText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 custPasswordTextActionPerformed(evt);
 =======
+=======
+>>>>>>> Stashed changes
         txtCustPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
         txtCustPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCustPasswordActionPerformed(evt);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
         });
@@ -286,7 +328,11 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel15.setText("Password");
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jTextField10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+=======
+        txtCustPhoneNum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+>>>>>>> Stashed changes
 =======
         txtCustPhoneNum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 >>>>>>> Stashed changes
@@ -313,8 +359,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(custFirstNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                                    .addComponent(txtCustAge, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCustFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> Stashed changes
 =======
                                     .addComponent(txtCustAge, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtCustFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -327,8 +378,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(custUsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                                    .addComponent(txtCustAddrLine1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCustUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> Stashed changes
 =======
                                     .addComponent(txtCustAddrLine1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtCustUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -345,6 +401,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -354,6 +411,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
 =======
+=======
+>>>>>>> Stashed changes
                                     .addComponent(txtCustAddrLine2, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtCustGender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(txtCustLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -362,6 +421,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                         .addComponent(txtCustEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txtCustPhoneNum, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                 .addGap(76, 76, 76))
         );
@@ -371,6 +433,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
                     .addComponent(custFirstNameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
@@ -398,6 +461,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                     .addComponent(custPasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(custUsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 =======
+=======
+>>>>>>> Stashed changes
                     .addComponent(txtCustFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
                     .addComponent(txtCustLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -423,6 +488,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtCustPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCustUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                     .addComponent(jLabel15)
                     .addComponent(jLabel13))
@@ -435,7 +503,11 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(231, Short.MAX_VALUE)
+=======
+                .addContainerGap(158, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(158, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -458,7 +530,11 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 .addContainerGap(62, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addGap(51, 51, 51))
+=======
+                .addGap(124, 124, 124))
+>>>>>>> Stashed changes
 =======
                 .addGap(124, 124, 124))
 >>>>>>> Stashed changes
@@ -474,11 +550,17 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 490));
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         homeButton1.setText("Home");
         homeButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(homeButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 170, 59, 28));
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -495,6 +577,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
@@ -503,6 +586,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_custPasswordTextActionPerformed
 =======
+=======
+>>>>>>> Stashed changes
     private void txtCustAddrLine2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCustAddrLine2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCustAddrLine2ActionPerformed
@@ -679,6 +764,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
           txtCustUsername.setText(null);
            txtCustPassword.setText(null);
     }//GEN-LAST:event_refreshButtonActionPerformed
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -708,6 +796,10 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        //</editor-fold>
+>>>>>>> Stashed changes
 =======
         //</editor-fold>
 >>>>>>> Stashed changes
@@ -723,9 +815,13 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JTextField custFirstNameText;
     private javax.swing.JTextField custPasswordText;
     private javax.swing.JTextField custUsernameText;
+=======
+    private javax.swing.JButton homeButton1;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JButton homeButton1;
 >>>>>>> Stashed changes
@@ -752,6 +848,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
@@ -762,6 +859,8 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton registerButton;
 =======
+=======
+>>>>>>> Stashed changes
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton registerButton;
     private javax.swing.JTextField txtCustAddrLine1;
@@ -774,6 +873,9 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtCustPassword;
     private javax.swing.JTextField txtCustPhoneNum;
     private javax.swing.JTextField txtCustUsername;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }

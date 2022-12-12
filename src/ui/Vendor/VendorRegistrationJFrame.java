@@ -66,6 +66,10 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
         jTextField8 = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        jButton1 = new javax.swing.JButton();
+>>>>>>> Stashed changes
 =======
         jButton1 = new javax.swing.JButton();
 >>>>>>> Stashed changes
@@ -115,17 +119,23 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
         registerButton.setText("Register");
         registerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 720, 119, 39));
 
         refreshButton.setText("Refresh");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 720, 117, 39));
 =======
+=======
+>>>>>>> Stashed changes
         jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 720, 119, 39));
 
         refreshButton.setText("Refresh");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, 117, 39));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         backButton.setText("Back");
@@ -245,9 +255,15 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE))
+=======
+                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                     .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -346,7 +362,11 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
                 .addGap(221, 221, 221)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(249, Short.MAX_VALUE))
+=======
+                .addContainerGap(170, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(170, Short.MAX_VALUE))
 >>>>>>> Stashed changes
@@ -367,7 +387,11 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(36, Short.MAX_VALUE))
+=======
+                .addContainerGap(115, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(115, Short.MAX_VALUE))
 >>>>>>> Stashed changes
@@ -383,11 +407,17 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 490));
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         jButton1.setText("Home");
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 170, 60, 30));
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -455,6 +485,10 @@ public class VendorRegistrationJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField custPasswordText;
     private javax.swing.JTextField custUsernameText;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JButton jButton1;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JButton jButton1;
 >>>>>>> Stashed changes

@@ -5,6 +5,11 @@
 package ui.Customer;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import javax.swing.JPanel;
+
+>>>>>>> Stashed changes
 =======
 import javax.swing.JPanel;
 
@@ -19,10 +24,13 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
      * Creates new form RentalTransportationJPanel
      */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public RentalTransportationJPanel() {
         initComponents();
     }
 =======
+=======
+>>>>>>> Stashed changes
     
     JPanel rightJPanel;
     public RentalTransportationJPanel() {
@@ -32,6 +40,9 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
         initComponents();
         this.rightJPanel = rightJPanel;
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -44,6 +55,7 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -96,6 +108,8 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1580, 30));
 =======
+=======
+>>>>>>> Stashed changes
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -116,11 +130,15 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
         jLabel6.setText("jLabel2");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Rental Transportation Vendors");
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 350, -1));
 
@@ -148,6 +166,8 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
         updateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 710, 119, 39));
 =======
+=======
+>>>>>>> Stashed changes
 
         logoutButton.setText("Logout");
         logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -176,6 +196,9 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         backButton.setText("Back");
@@ -185,6 +208,7 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 710, 117, 39));
 
@@ -222,6 +246,8 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
 
         jLabel1.setText("Add search if required, refer custViewbookings screen");
 =======
+=======
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -260,12 +286,16 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
             }
         ));
         jScrollPane1.setViewportView(jTable1);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(78, Short.MAX_VALUE)
@@ -307,6 +337,8 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
 
 =======
+=======
+>>>>>>> Stashed changes
             .addGap(0, 1192, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
@@ -354,13 +386,20 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
                 .addGap(41, 41, 41))
         );
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 1580, Short.MAX_VALUE)
+=======
+            .addGap(0, 1327, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 1327, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -373,7 +412,11 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 800, Short.MAX_VALUE)
+=======
+            .addGap(0, 802, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 802, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -393,6 +436,7 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JTable custBookingsTable;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -404,16 +448,27 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
 >>>>>>> Stashed changes
+=======
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+>>>>>>> Stashed changes
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JButton updateButton;
+=======
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JButton logoutButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

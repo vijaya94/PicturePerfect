@@ -61,7 +61,11 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
         jTextField10 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jButton2 = new javax.swing.JButton();
+=======
+        logoutButton = new javax.swing.JButton();
+>>>>>>> Stashed changes
 =======
         logoutButton = new javax.swing.JButton();
 >>>>>>> Stashed changes
@@ -69,6 +73,7 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -83,6 +88,17 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 590, 120));
+=======
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
+        jLabel3.setText("jLabel2");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
+        jLabel4.setText("jLabel2");
+>>>>>>> Stashed changes
 =======
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
@@ -114,12 +130,18 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1580, 30));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Customer Details");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 200, -1));
+=======
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 0, 255));
+        jLabel10.setText("Customer Details");
+>>>>>>> Stashed changes
 =======
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
@@ -145,11 +167,16 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 770, 1580, 30));
 
         updateButton.setText("Update");
         updateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 710, 119, 39));
+=======
+        updateButton.setText("Update");
+        updateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+>>>>>>> Stashed changes
 =======
         updateButton.setText("Update");
         updateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -163,7 +190,10 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 710, 117, 39));
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -325,7 +355,11 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(231, Short.MAX_VALUE)
+=======
+                .addContainerGap(167, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(167, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -348,7 +382,11 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
                 .addGap(60, 60, 60)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addContainerGap(53, Short.MAX_VALUE))
+=======
+                .addContainerGap(117, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                 .addContainerGap(117, Short.MAX_VALUE))
 >>>>>>> Stashed changes
@@ -362,11 +400,14 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
 
         jButton2.setText("Logout");
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 170, -1, -1));
 =======
+=======
+>>>>>>> Stashed changes
         logoutButton.setText("Logout");
         logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
 
@@ -421,6 +462,9 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -500,7 +544,10 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField custPasswordText;
     private javax.swing.JTextField custUsernameText;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private javax.swing.JButton jButton2;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     private javax.swing.JLabel jLabel10;
@@ -533,6 +580,10 @@ public class CustomerViewDetailsJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JButton logoutButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JButton logoutButton;
 >>>>>>> Stashed changes

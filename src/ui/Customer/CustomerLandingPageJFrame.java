@@ -48,6 +48,10 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         viewDetailsButton = new javax.swing.JButton();
         viewBookingsButton = new javax.swing.JButton();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        logoutButton = new javax.swing.JButton();
+>>>>>>> Stashed changes
 =======
         logoutButton = new javax.swing.JButton();
 >>>>>>> Stashed changes
@@ -55,6 +59,7 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -69,6 +74,17 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 590, 120));
+=======
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
+        jLabel3.setText("jLabel2");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
+        jLabel4.setText("jLabel2");
+>>>>>>> Stashed changes
 =======
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
@@ -100,12 +116,18 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1580, 30));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Book An Event");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 170, -1));
+=======
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 0, 255));
+        jLabel10.setText("Book An Event");
+>>>>>>> Stashed changes
 =======
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
@@ -131,8 +153,11 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 770, 1580, 30));
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         jPanel2.setBackground(new java.awt.Color(204, 102, 255));
@@ -207,7 +232,11 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 1452, Short.MAX_VALUE)
+=======
+            .addGap(0, 1408, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 1408, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -216,7 +245,11 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
                     .addGap(421, 421, 421)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     .addContainerGap(421, Short.MAX_VALUE)))
+=======
+                    .addContainerGap(381, Short.MAX_VALUE)))
+>>>>>>> Stashed changes
 =======
                     .addContainerGap(381, Short.MAX_VALUE)))
 >>>>>>> Stashed changes
@@ -237,9 +270,15 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 .addGap(75, 75, 75)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
+=======
+                .addGap(47, 47, 47)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(94, Short.MAX_VALUE))
+>>>>>>> Stashed changes
 =======
                 .addGap(47, 47, 47)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -255,6 +294,7 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         );
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
 
         bookEventButton.setText("Book An Event");
@@ -269,6 +309,8 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         viewBookingsButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(viewBookingsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 710, 117, 39));
 =======
+=======
+>>>>>>> Stashed changes
         bookEventButton.setText("Book An Event");
         bookEventButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         bookEventButton.addActionListener(new java.awt.event.ActionListener() {
@@ -349,6 +391,9 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -384,7 +429,10 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_custSpecialRequestTextActionPerformed
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     private void bookEventButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookEventButtonActionPerformed
         // TODO add your handling code here:
         new CustomerBookEventJFrame().setVisible(true);
@@ -403,6 +451,9 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_viewBookingsButtonActionPerformed
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     /**
      * @param args the command line arguments
@@ -460,6 +511,10 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JButton logoutButton;
+>>>>>>> Stashed changes
 =======
     private javax.swing.JButton logoutButton;
 >>>>>>> Stashed changes

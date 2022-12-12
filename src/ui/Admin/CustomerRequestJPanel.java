@@ -5,6 +5,11 @@
 package ui.Admin;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import javax.swing.JPanel;
+
+>>>>>>> Stashed changes
 =======
 import javax.swing.JPanel;
 
@@ -19,10 +24,13 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
      * Creates new form CustomerRequestJPanel
      */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public CustomerRequestJPanel() {
         initComponents();
     }
 =======
+=======
+>>>>>>> Stashed changes
     JPanel rightJPanel;
     public CustomerRequestJPanel() {
         initComponents();
@@ -32,6 +40,9 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         initComponents();
         this.rightJPanel = rightJPanel;
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     /**
@@ -44,6 +55,7 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -127,6 +139,8 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         rejectButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
         jPanel1.add(rejectButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 710, 117, 39));
 =======
+=======
+>>>>>>> Stashed changes
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -181,6 +195,9 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         backButton.setText("Back");
@@ -190,6 +207,7 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         jPanel1.add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 710, 117, 39));
 
@@ -227,6 +245,8 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
 
         searchText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 =======
+=======
+>>>>>>> Stashed changes
 
         approveButton.setText("Approve");
         approveButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -288,12 +308,16 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
             }
         ));
         jScrollPane1.setViewportView(jTable1);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(41, Short.MAX_VALUE)
@@ -348,6 +372,8 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(approveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 710, 117, 39));
 
 =======
+=======
+>>>>>>> Stashed changes
             .addGap(0, 1192, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
@@ -395,13 +421,20 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
                 .addGap(41, 41, 41))
         );
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 1580, Short.MAX_VALUE)
+=======
+            .addGap(0, 1327, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 1327, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -414,7 +447,11 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             .addGap(0, 800, Short.MAX_VALUE)
+=======
+            .addGap(0, 802, Short.MAX_VALUE)
+>>>>>>> Stashed changes
 =======
             .addGap(0, 802, Short.MAX_VALUE)
 >>>>>>> Stashed changes
@@ -435,16 +472,23 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_approveButtonActionPerformed
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     private void rejectButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rejectButtonActionPerformed
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton approveButton;
     private javax.swing.JButton backButton;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private javax.swing.JTable custBookingsTable;
     private javax.swing.JLabel jLabel10;
@@ -457,10 +501,16 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
 >>>>>>> Stashed changes
+=======
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+>>>>>>> Stashed changes
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
@@ -469,10 +519,15 @@ public class CustomerRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton rejectButton;
     private javax.swing.JTextField searchText;
 =======
+=======
+>>>>>>> Stashed changes
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton logoutButton;
     private javax.swing.JButton rejectButton;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }

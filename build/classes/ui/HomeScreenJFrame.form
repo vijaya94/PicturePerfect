@@ -167,9 +167,12 @@
         </Component>
         <Component class="javax.swing.JButton" name="customerButton">
           <Properties>
+<<<<<<< Updated upstream
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="66" red="cc" type="rgb"/>
             </Property>
+=======
+>>>>>>> Stashed changes
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
@@ -181,9 +184,12 @@
         </Component>
         <Component class="javax.swing.JButton" name="adminButton">
           <Properties>
+<<<<<<< Updated upstream
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="66" red="cc" type="rgb"/>
             </Property>
+=======
+>>>>>>> Stashed changes
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
@@ -195,9 +201,12 @@
         </Component>
         <Component class="javax.swing.JButton" name="vendorButton">
           <Properties>
+<<<<<<< Updated upstream
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="66" red="cc" type="rgb"/>
             </Property>
+=======
+>>>>>>> Stashed changes
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>

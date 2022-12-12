@@ -2,12 +2,18 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="ff" green="66" red="cc" type="rgb"/>
     </Property>
   </Properties>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -25,6 +31,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <EmptySpace min="0" pref="1580" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
@@ -33,6 +40,8 @@
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
 =======
+=======
+>>>>>>> Stashed changes
           <Group type="102" attributes="0">
               <Component id="jLabel5" min="-2" pref="657" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -44,12 +53,16 @@
               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="71" max="32767" attributes="0"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <EmptySpace min="0" pref="800" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -59,6 +72,8 @@
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
 =======
+=======
+>>>>>>> Stashed changes
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" pref="120" max="-2" attributes="0"/>
@@ -71,6 +86,9 @@
               <EmptySpace pref="54" max="32767" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           </Group>
       </Group>
@@ -78,7 +96,10 @@
   </Layout>
   <SubComponents>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -95,6 +116,9 @@
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
     </Component>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
@@ -103,6 +127,7 @@
         </Property>
       </Properties>
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
@@ -186,6 +211,8 @@
           </SubComponents>
         </Container>
 =======
+=======
+>>>>>>> Stashed changes
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
@@ -214,6 +241,9 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
@@ -225,6 +255,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Catering Vendors"/>
           </Properties>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -274,10 +305,15 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Send Request"/>
 =======
+=======
+>>>>>>> Stashed changes
         </Component>
         <Component class="javax.swing.JButton" name="logoutButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Logout"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -288,6 +324,7 @@
             </Property>
           </Properties>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="1350" y="710" width="119" height="39"/>
@@ -295,6 +332,8 @@
           </Constraints>
         </Component>
 =======
+=======
+>>>>>>> Stashed changes
         </Component>
       </SubComponents>
     </Container>
@@ -326,6 +365,9 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         <Component class="javax.swing.JButton" name="backButton">
           <Properties>
@@ -341,6 +383,7 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backButtonActionPerformed"/>
           </Events>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -470,6 +513,8 @@
               </SubComponents>
             </Container>
 =======
+=======
+>>>>>>> Stashed changes
         </Component>
       </SubComponents>
     </Container>
@@ -533,6 +578,9 @@
                 </Property>
               </Properties>
             </Component>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           </SubComponents>
         </Container>
