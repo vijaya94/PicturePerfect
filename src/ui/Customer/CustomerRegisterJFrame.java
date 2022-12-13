@@ -68,6 +68,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         txtCustPhoneNum = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
+        homeButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -118,7 +119,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 registerButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 720, 119, 39));
+        jPanel1.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 720, 119, 39));
 
         refreshButton.setText("Refresh");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -127,7 +128,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
                 refreshButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 720, 117, 39));
+        jPanel1.add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, 117, 39));
 
         backButton.setText("Back");
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
@@ -315,7 +316,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(231, Short.MAX_VALUE)
+                .addContainerGap(158, Short.MAX_VALUE)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(212, 212, 212))
         );
@@ -334,7 +335,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(62, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51))
+                .addGap(124, 124, 124))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -345,6 +346,10 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 490));
+
+        homeButton1.setText("Home");
+        homeButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+        jPanel1.add(homeButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 170, 59, 28));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -563,6 +568,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CustomerRegisterJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -574,6 +580,7 @@ public class CustomerRegisterJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
+    private javax.swing.JButton homeButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

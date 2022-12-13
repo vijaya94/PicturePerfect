@@ -4,17 +4,51 @@
  */
 package ui.Customer;
 
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Date;
+import javax.swing.JOptionPane;
+import model.DBConnection;
+
 /**
  *
- * @author Avinash Reddy
+ * @author nihar
  */
 public class CustomerLandingPageJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form CustomerLandingPageJFrame
      */
-    public CustomerLandingPageJFrame() {
+    String username;
+    public CustomerLandingPageJFrame(String username) {
+        this.username = username;
         initComponents();
+        loadEventType();
+    }
+    
+    public CustomerLandingPageJFrame(){
+        initComponents();
+    }
+    
+    public void loadEventType(){
+        try {
+                    Connection connection = (Connection) DBConnection.con();
+
+                    PreparedStatement st = connection.prepareStatement("Select * from enterprises_list");
+
+                    ResultSet rs = st.executeQuery();
+                    
+                    
+                     while (rs.next()) {
+                        cmbEventType.addItem(rs.getString(2));
+                     }
+                    
+                } catch (SQLException sqlException) {
+                    sqlException.printStackTrace();
+                }
     }
 
     /**
@@ -40,30 +74,27 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        custPasswordText = new javax.swing.JTextField();
-        eventTypeComboBox = new javax.swing.JComboBox<>();
-        custSpecialRequestText = new javax.swing.JTextField();
+        cmbEventType = new javax.swing.JComboBox<>();
+        txtCustSpecialRequest = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         bookEventButton = new javax.swing.JButton();
         viewDetailsButton = new javax.swing.JButton();
         viewBookingsButton = new javax.swing.JButton();
+        logoutButton = new javax.swing.JButton();
+        dtBookEvent = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 120));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
         jLabel3.setText("jLabel2");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 500, 120));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Vendor/Header.png"))); // NOI18N
         jLabel4.setText("jLabel2");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 590, 120));
 
         jPanel3.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -80,15 +111,12 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1580, 30));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 255));
         jLabel10.setText("Book An Event");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 160, 170, -1));
 
         jPanel5.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -105,10 +133,8 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
-
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 770, 1580, 30));
 
         jPanel2.setBackground(new java.awt.Color(204, 102, 255));
 
@@ -122,20 +148,13 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Date");
 
-        custPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
-        custPasswordText.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                custPasswordTextActionPerformed(evt);
-            }
-        });
+        cmbEventType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Birthday" }));
+        cmbEventType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
 
-        eventTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Birthday" }));
-        eventTypeComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
-
-        custSpecialRequestText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
-        custSpecialRequestText.addActionListener(new java.awt.event.ActionListener() {
+        txtCustSpecialRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255), 3));
+        txtCustSpecialRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                custSpecialRequestTextActionPerformed(evt);
+                txtCustSpecialRequestActionPerformed(evt);
             }
         });
 
@@ -154,9 +173,8 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(100, 100, 100)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(custPasswordText)
-                    .addComponent(eventTypeComboBox, 0, 264, Short.MAX_VALUE)
-                    .addComponent(custSpecialRequestText))
+                    .addComponent(cmbEventType, 0, 264, Short.MAX_VALUE)
+                    .addComponent(txtCustSpecialRequest))
                 .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -165,14 +183,12 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(eventTypeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbEventType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(51, 51, 51)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(custPasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
+                .addComponent(jLabel7)
+                .addGap(57, 57, 57)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(custSpecialRequestText, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCustSpecialRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addContainerGap(52, Short.MAX_VALUE))
         );
@@ -181,12 +197,12 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1452, Short.MAX_VALUE)
+            .addGap(0, 1408, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addGap(421, 421, 421)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(421, Short.MAX_VALUE)))
+                    .addContainerGap(381, Short.MAX_VALUE)))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,9 +219,9 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(75, 75, 75)
+                .addGap(47, 47, 47)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,25 +231,98 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
                 .addContainerGap(31, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1580, 470));
-
         bookEventButton.setText("Book An Event");
         bookEventButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        jPanel1.add(bookEventButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 710, 117, 39));
+        bookEventButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bookEventButtonActionPerformed(evt);
+            }
+        });
 
         viewDetailsButton.setText("View Details");
         viewDetailsButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        jPanel1.add(viewDetailsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 710, 117, 39));
+        viewDetailsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewDetailsButtonActionPerformed(evt);
+            }
+        });
 
         viewBookingsButton.setText("View Bookings");
         viewBookingsButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
-        jPanel1.add(viewBookingsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 710, 117, 39));
+        viewBookingsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewBookingsButtonActionPerformed(evt);
+            }
+        });
+
+        logoutButton.setText("Logout");
+        logoutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 102, 255)));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(690, 690, 690)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(129, 129, 129))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(990, 990, 990)
+                        .addComponent(bookEventButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)
+                        .addComponent(viewDetailsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)
+                        .addComponent(viewBookingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bookEventButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(viewDetailsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(viewBookingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        dtBookEvent.setBackground(new java.awt.Color(255, 255, 255));
+        dtBookEvent.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 0, 255), 3));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1580, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(731, 731, 731)
+                .addComponent(dtBookEvent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(585, 585, 585))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -242,7 +331,10 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(377, 377, 377)
+                .addComponent(dtBookEvent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(395, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -253,13 +345,68 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void custPasswordTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custPasswordTextActionPerformed
+    private void txtCustSpecialRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCustSpecialRequestActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_custPasswordTextActionPerformed
+    }//GEN-LAST:event_txtCustSpecialRequestActionPerformed
 
-    private void custSpecialRequestTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custSpecialRequestTextActionPerformed
+    private void bookEventButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookEventButtonActionPerformed
+        
+        int eventType = cmbEventType.getSelectedIndex();
+        Date bookEvent = dtBookEvent.getDate();
+        String specialRequest = txtCustSpecialRequest.getText();
+        int userId =0; 
+        try {
+                    Connection connection = (Connection) DBConnection.con();
+                    
+                    PreparedStatement st1 = connection.prepareStatement("Select user_id from user_details where username = ?");
+                    st1.setString(1,username);
+                    ResultSet rs1 = st1.executeQuery();
+                    
+                    
+                     while (rs1.next()) {
+                        userId = rs1.getInt(1);
+                     }
+                    
+                                      
+                    String insertTableSQL = "INSERT INTO booking_details(user_id, event_type, booking_date, special_request) VALUES(?,?,?,?);";
+                    PreparedStatement st = (PreparedStatement)connection.prepareStatement(insertTableSQL, PreparedStatement.RETURN_GENERATED_KEYS);
+                    st.setInt(1, userId);
+                    st.setInt(2, eventType);
+                    st.setDate(3, new java.sql.Date(bookEvent.getTime()));
+                    st.setString(4, specialRequest);
+                                                          
+                    Integer returnedValue = st.executeUpdate();
+                    if (returnedValue>0) {
+                        ResultSet rs = st.getGeneratedKeys();
+                        int generatedKey = 0;
+                        if (rs.next()) {
+                            generatedKey = rs.getInt(1);
+                                }                        
+                        new CustomerBookEventJFrame(username, generatedKey).setVisible(true);
+                        dispose();
+                        JOptionPane.showMessageDialog(this, "Welcome");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Something went wrong");
+                    }
+                    
+                    
+                } catch (SQLException sqlException) {
+                    sqlException.printStackTrace();
+                }
+        
+    }//GEN-LAST:event_bookEventButtonActionPerformed
+
+    private void viewDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_custSpecialRequestTextActionPerformed
+        new CustomerViewDetailsJFrame().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_viewDetailsButtonActionPerformed
+
+    private void viewBookingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBookingsButtonActionPerformed
+        // TODO add your handling code here:
+        new CustomerViewBookingsJFrame().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_viewBookingsButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -298,9 +445,8 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bookEventButton;
-    private javax.swing.JTextField custPasswordText;
-    private javax.swing.JTextField custSpecialRequestText;
-    private javax.swing.JComboBox<String> eventTypeComboBox;
+    private javax.swing.JComboBox<String> cmbEventType;
+    private com.toedter.calendar.JDateChooser dtBookEvent;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -316,6 +462,8 @@ public class CustomerLandingPageJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JButton logoutButton;
+    private javax.swing.JTextField txtCustSpecialRequest;
     private javax.swing.JButton viewBookingsButton;
     private javax.swing.JButton viewDetailsButton;
     // End of variables declaration//GEN-END:variables
