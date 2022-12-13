@@ -270,10 +270,10 @@ public class RentalTransportationJPanel extends javax.swing.JPanel {
                     if (returnedValue>0) {
                         
                         JOptionPane.showMessageDialog(this, "Transportation is requested");
-                    
-        TableRowSorter<DefaultTableModel> tableRowSorter = new TableRowSorter(model);
-        tblTransportationVendors.setRowSorter(tableRowSorter);
-        tableRowSorter.setRowFilter(null);
+         RentalTransportationJPanel shjp = new RentalTransportationJPanel(rightJPanel, username, bookingId, bookingDate);
+                rightJPanel.add("RentalTransportationJPanel",shjp);
+                CardLayout layout = (CardLayout)rightJPanel.getLayout();
+                layout.next(rightJPanel);
                         
                     } else {
                         JOptionPane.showMessageDialog(this, "Something went wrong");
